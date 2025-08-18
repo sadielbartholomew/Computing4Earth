@@ -1,9 +1,7 @@
-# High-performance Computing (HPC) for Earth system science
+# High-performance Computing (HPC) for Earth System Science
 
 * The need for HPC in Earth system science
   * spatiotemporal resolutions and timescales
-  * data concerns
-    * data storage
 * Supercomputers
   * tier system for the UK
   * the Top500
@@ -30,9 +28,12 @@
   * configuration of workflows
 * Data Management & I/O
   * input/output (I/O) strategies
-  * data compression, reduction, and in-situ analysis
+  * data compression
+  * data reduction
+  * in-situ analysis
   * parallel file systems (e.g. Lustre)
-  * storage tiers
+  * storage
+    * tiers
 * Sustainability
   * energy use and efficiency
   * the Green500

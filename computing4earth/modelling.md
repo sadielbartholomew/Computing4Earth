@@ -3,16 +3,16 @@
 * Modelling and simulation
 * Model types
   * GCM vs. ESM
-* Components and example common models
-  * Atmosphere
-  * Ocean
-  * Land Surface
-  * Cryosphere - land ice (glaciers, ice sheets) and sea ice.
-  * Biosphere: terrestrial and marine
-  * Biogeochemical Cycles: e.g. carbon cycle,nitrogen, sulfur, phosphorus cycles
-  * Anthroposphere (i.e. human systems)
+* Components and example models
+  * atmosphere
+  * ocean
+  * land surface
+  * cryosphere - land ice (glaciers, ice sheets) and sea ice.
+  * biosphere: terrestrial and marine
+  * biogeochemical cycles: e.g. carbon cycle,nitrogen, sulfur, phosphorus cycles
+  * anthroposphere (i.e. human systems)
 * Coupling components
-* Coupled models
+  * Coupled models
 * Data Assimilation
 * Ensembles
 * Global vs. regional climate models

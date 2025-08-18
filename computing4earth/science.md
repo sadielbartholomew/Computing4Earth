@@ -1,25 +1,25 @@
-# Basics of (aspects of) Earth System Science
+# Basics of Earth System Science
 
 * Weather vs. climate
   * NWP
     * forecasting, hindcasting, nowcasting
-  * Climatology
+  * climatology
 * Science of specific Earth system components
-  * Atmosphere
+  * atmosphere
     * circulation
     * water cycle: clouds and precipitation
     * radiation
-  *  Oceanography
+  *  oceanography
     * currents
     * thermohaline circulation
     * heat transport
-  * Cryosphere
+  * cryosphere
     * glaciers
     * ice sheets
     * sea ice
     * permafrost
 * Interations between components 
-* Climate dynamics & processes
+* Climate dynamics and processes
   * energy balance & radiative forcing – greenhouse effect, aerosols, albedo
   * cycles
     * biogeochemical
@@ -32,22 +32,22 @@
     * Pacific Decadal Oscillation
     * volcanic eruptions
     * solar cycles
-  * Carbon Cycle & Biogeochemical Cycles – carbon sources/sinks, nitrogen cycle, feedbacks
+  * carbon Cycle and biogeochemical Cycles – carbon sources/sinks, nitrogen cycle, feedbacks
 * Past, present and future climate
-  * Past
-    * Paleoclimate
-  * Present
-    * Climate Change
-      * Observed evidence and trends
-        * Human causes
-      * Impacts
+  * past
+    * paleoclimate
+  * present
+    * climate change
+      * observed evidence and trends
+        * human causes
+      * impacts
         * extreme events: heatwaves, hurricanes, wildfires, compound events, droughts, floods
         * human impact: agriculture, health, urban climate, migration, freshwater availability
         * ecosystem responses: biodiversity shifts, ocean acidification, terrestrial ecosystems
-      * Proposed solutions
+      * proposed solutions
         * mitigation: renewable energy, carbon capture, geoengineering
         * adaptation: infrastructure, ecosystem-based adaptation, risk management
         * international agreements: IPCC, UNFCCC, Paris Agreement
         * equity and justice: climate justice, vulnerable populations, global inequalities
-  * Future
-   * Future projections
+  * future
+   * future projections

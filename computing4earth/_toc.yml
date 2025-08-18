@@ -4,6 +4,10 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: modelling
+- file: data
+- file: metadata
+- file: hpc
+- file: grids-and-projections
+- file: science
+
