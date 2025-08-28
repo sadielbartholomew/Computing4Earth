@@ -1,5 +1,17 @@
 # Metadata
 
-* Metadata in Earth Science
-* Metadata standards
-  * CF Conventions
+TODO
+
+## Metadata in Earth Science
+
+TODO
+
+***
+
+## Metadata standards
+
+TODO
+
+### CF Conventions
+
+TODO
