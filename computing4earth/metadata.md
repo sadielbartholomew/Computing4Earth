@@ -2,6 +2,9 @@
 
 TODO
 
+```{contents}
+```
+
 ## Metadata in Earth Science
 
 TODO

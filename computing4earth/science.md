@@ -2,6 +2,9 @@
 
 TODO
 
+```{contents}
+```
+
 ## Weather vs. climate
 
 TODO

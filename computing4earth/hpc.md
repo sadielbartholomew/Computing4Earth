@@ -2,6 +2,9 @@
 
 TODO
 
+```{contents}
+```
+
 ## The need for HPC in Earth system science
 
 TODO
