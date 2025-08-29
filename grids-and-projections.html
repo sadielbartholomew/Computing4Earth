@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'grids-and-projections';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Basics of (aspects of) Earth System Science" href="science.html" />
-    <link rel="prev" title="High-performance Computing (HPC) for Earth system science" href="hpc.html" />
+    <link rel="next" title="Basics of Earth System Science" href="science.html" />
+    <link rel="prev" title="High-performance Computing (HPC) for Earth System Science" href="hpc.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,9 +183,9 @@
 <li class="toctree-l1"><a class="reference internal" href="modelling.html">Earth system modelling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata.html">Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hpc.html">High-performance Computing (HPC) for Earth system science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">High-performance Computing (HPC) for Earth System Science</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Grids and Projections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="science.html">Basics of (aspects of) Earth System Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="science.html">Basics of Earth System Science</a></li>
 </ul>
 
     </div>
@@ -358,7 +358,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -374,6 +376,54 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grids">Grids</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grid-resolution">Grid resolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#horiztonal-resolution">Horiztonal resolution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-resolution">Vertical resolution</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-vs-irregular-vs-unstructured">Regular vs. irregular vs.unstructured</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structured-rectangular-cartesian-grids">Structured (rectangular/Cartesian) grids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#curvilinear-grids">Curvilinear grids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#irregular-grids">Irregular grids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unstructured-grids-and-ugrid">Unstructured grids and UGRID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#grid-choice-advantages-and-disadvantages">Grid choice advantages and disadvantages</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-coodinates">Vertical coodinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#parametric-and-hybrid">Parametric and hybrid</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#height-vs-pressure">Height vs. pressure</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regridding">Regridding</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation-methods">Interpolation methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projections">Projections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-projections-and-why-they-are-needed">Map projections and why they are needed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distortions">Distortions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-projections">Types of projections</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#projections-commonly-used-in-various-applications">Projections commonly used in various applications</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projection-choice-and-application">Projection choice and application</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-numerical-modelling">For numerical modelling</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visulisation">Visulisation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regional-domain">Regional domain</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -384,59 +434,167 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="grids-and-projections">
-<h1>Grids and Projections<a class="headerlink" href="#grids-and-projections" title="Link to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Grids and Projections</a><a class="headerlink" href="#grids-and-projections" title="Link to this heading">#</a></h1>
+<p>TODO</p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p>Grids</p>
+<li><p><a class="reference internal" href="#grids-and-projections" id="id1">Grids and Projections</a></p>
 <ul>
-<li><p>grid resolution</p>
+<li><p><a class="reference internal" href="#grids" id="id2">Grids</a></p>
 <ul>
-<li><p>horiztonal resolution</p></li>
-<li><p>vertical resolution</p></li>
+<li><p><a class="reference internal" href="#grid-resolution" id="id3">Grid resolution</a></p>
+<ul>
+<li><p><a class="reference internal" href="#horiztonal-resolution" id="id4">Horiztonal resolution</a></p></li>
+<li><p><a class="reference internal" href="#vertical-resolution" id="id5">Vertical resolution</a></p></li>
 </ul>
 </li>
-<li><p>regular vs. irregular vs.unstructured</p>
+<li><p><a class="reference internal" href="#regular-vs-irregular-vs-unstructured" id="id6">Regular vs. irregular vs.unstructured</a></p>
 <ul>
-<li><p>structured (rectangular/Cartesian) grids</p></li>
-<li><p>curvilinear grids</p></li>
-<li><p>irregular grids</p></li>
-<li><p>unstructured grids</p>
-<ul>
-<li><p>UGRID</p></li>
+<li><p><a class="reference internal" href="#structured-rectangular-cartesian-grids" id="id7">Structured (rectangular/Cartesian) grids</a></p></li>
+<li><p><a class="reference internal" href="#curvilinear-grids" id="id8">Curvilinear grids</a></p></li>
+<li><p><a class="reference internal" href="#irregular-grids" id="id9">Irregular grids</a></p></li>
+<li><p><a class="reference internal" href="#unstructured-grids-and-ugrid" id="id10">Unstructured grids and UGRID</a></p></li>
+<li><p><a class="reference internal" href="#coordinate-systems" id="id11">Coordinate systems</a></p></li>
+<li><p><a class="reference internal" href="#grid-choice-advantages-and-disadvantages" id="id12">Grid choice advantages and disadvantages</a></p></li>
 </ul>
 </li>
-<li><p>coordinate systems</p></li>
-<li><p>grid choice advantages and disadvantages</p></li>
+<li><p><a class="reference internal" href="#vertical-coodinates" id="id13">Vertical coodinates</a></p>
+<ul>
+<li><p><a class="reference internal" href="#parametric-and-hybrid" id="id14">Parametric and hybrid</a></p></li>
+<li><p><a class="reference internal" href="#height-vs-pressure" id="id15">Height vs. pressure</a></p></li>
 </ul>
 </li>
-<li><p>Vertical coodinates</p></li>
-<li><p>parametric and hybrid</p></li>
-<li><p>height vs. pressure</p></li>
-<li><p>Regridding</p>
+<li><p><a class="reference internal" href="#regridding" id="id16">Regridding</a></p>
 <ul>
-<li><p>Interpolation methods</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Projections</p>
-<ul>
-<li><p>map projections and why they are needed</p></li>
-<li><p>distortions</p></li>
-<li><p>types of projections</p>
-<ul>
-<li><p>projections commonly used in various applications</p></li>
-</ul>
-</li>
-<li><p>projection choice and application</p>
-<ul>
-<li><p>for numerical modelling</p></li>
-<li><p>visulisation</p></li>
-<li><p>regional domain</p></li>
+<li><p><a class="reference internal" href="#interpolation-methods" id="id17">Interpolation methods</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
+<li><p><a class="reference internal" href="#projections" id="id18">Projections</a></p>
+<ul>
+<li><p><a class="reference internal" href="#map-projections-and-why-they-are-needed" id="id19">Map projections and why they are needed</a></p></li>
+<li><p><a class="reference internal" href="#distortions" id="id20">Distortions</a></p></li>
+<li><p><a class="reference internal" href="#types-of-projections" id="id21">Types of projections</a></p>
+<ul>
+<li><p><a class="reference internal" href="#projections-commonly-used-in-various-applications" id="id22">Projections commonly used in various applications</a></p></li>
 </ul>
+</li>
+<li><p><a class="reference internal" href="#projection-choice-and-application" id="id23">Projection choice and application</a></p>
+<ul>
+<li><p><a class="reference internal" href="#for-numerical-modelling" id="id24">For numerical modelling</a></p></li>
+<li><p><a class="reference internal" href="#visulisation" id="id25">Visulisation</a></p></li>
+<li><p><a class="reference internal" href="#regional-domain" id="id26">Regional domain</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="grids">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Grids</a><a class="headerlink" href="#grids" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="grid-resolution">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Grid resolution</a><a class="headerlink" href="#grid-resolution" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="horiztonal-resolution">
+<h4><a class="toc-backref" href="#id4" role="doc-backlink">Horiztonal resolution</a><a class="headerlink" href="#horiztonal-resolution" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="vertical-resolution">
+<h4><a class="toc-backref" href="#id5" role="doc-backlink">Vertical resolution</a><a class="headerlink" href="#vertical-resolution" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+<section id="regular-vs-irregular-vs-unstructured">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Regular vs. irregular vs.unstructured</a><a class="headerlink" href="#regular-vs-irregular-vs-unstructured" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="structured-rectangular-cartesian-grids">
+<h4><a class="toc-backref" href="#id7" role="doc-backlink">Structured (rectangular/Cartesian) grids</a><a class="headerlink" href="#structured-rectangular-cartesian-grids" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="curvilinear-grids">
+<h4><a class="toc-backref" href="#id8" role="doc-backlink">Curvilinear grids</a><a class="headerlink" href="#curvilinear-grids" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="irregular-grids">
+<h4><a class="toc-backref" href="#id9" role="doc-backlink">Irregular grids</a><a class="headerlink" href="#irregular-grids" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="unstructured-grids-and-ugrid">
+<h4><a class="toc-backref" href="#id10" role="doc-backlink">Unstructured grids and UGRID</a><a class="headerlink" href="#unstructured-grids-and-ugrid" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="coordinate-systems">
+<h4><a class="toc-backref" href="#id11" role="doc-backlink">Coordinate systems</a><a class="headerlink" href="#coordinate-systems" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="grid-choice-advantages-and-disadvantages">
+<h4><a class="toc-backref" href="#id12" role="doc-backlink">Grid choice advantages and disadvantages</a><a class="headerlink" href="#grid-choice-advantages-and-disadvantages" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+<section id="vertical-coodinates">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Vertical coodinates</a><a class="headerlink" href="#vertical-coodinates" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="parametric-and-hybrid">
+<h4><a class="toc-backref" href="#id14" role="doc-backlink">Parametric and hybrid</a><a class="headerlink" href="#parametric-and-hybrid" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="height-vs-pressure">
+<h4><a class="toc-backref" href="#id15" role="doc-backlink">Height vs. pressure</a><a class="headerlink" href="#height-vs-pressure" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+<section id="regridding">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Regridding</a><a class="headerlink" href="#regridding" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="interpolation-methods">
+<h4><a class="toc-backref" href="#id17" role="doc-backlink">Interpolation methods</a><a class="headerlink" href="#interpolation-methods" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="projections">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Projections</a><a class="headerlink" href="#projections" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="map-projections-and-why-they-are-needed">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Map projections and why they are needed</a><a class="headerlink" href="#map-projections-and-why-they-are-needed" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="distortions">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Distortions</a><a class="headerlink" href="#distortions" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="types-of-projections">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Types of projections</a><a class="headerlink" href="#types-of-projections" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="projections-commonly-used-in-various-applications">
+<h4><a class="toc-backref" href="#id22" role="doc-backlink">Projections commonly used in various applications</a><a class="headerlink" href="#projections-commonly-used-in-various-applications" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+<section id="projection-choice-and-application">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Projection choice and application</a><a class="headerlink" href="#projection-choice-and-application" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="for-numerical-modelling">
+<h4><a class="toc-backref" href="#id24" role="doc-backlink">For numerical modelling</a><a class="headerlink" href="#for-numerical-modelling" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="visulisation">
+<h4><a class="toc-backref" href="#id25" role="doc-backlink">Visulisation</a><a class="headerlink" href="#visulisation" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="regional-domain">
+<h4><a class="toc-backref" href="#id26" role="doc-backlink">Regional domain</a><a class="headerlink" href="#regional-domain" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -475,7 +633,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">High-performance Computing (HPC) for Earth system science</p>
+        <p class="prev-next-title">High-performance Computing (HPC) for Earth System Science</p>
       </div>
     </a>
     <a class="right-next"
@@ -483,7 +641,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Basics of (aspects of) Earth System Science</p>
+        <p class="prev-next-title">Basics of Earth System Science</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -493,6 +651,61 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grids">Grids</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grid-resolution">Grid resolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#horiztonal-resolution">Horiztonal resolution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-resolution">Vertical resolution</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-vs-irregular-vs-unstructured">Regular vs. irregular vs.unstructured</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structured-rectangular-cartesian-grids">Structured (rectangular/Cartesian) grids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#curvilinear-grids">Curvilinear grids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#irregular-grids">Irregular grids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unstructured-grids-and-ugrid">Unstructured grids and UGRID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#grid-choice-advantages-and-disadvantages">Grid choice advantages and disadvantages</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-coodinates">Vertical coodinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#parametric-and-hybrid">Parametric and hybrid</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#height-vs-pressure">Height vs. pressure</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regridding">Regridding</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation-methods">Interpolation methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projections">Projections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-projections-and-why-they-are-needed">Map projections and why they are needed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distortions">Distortions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-projections">Types of projections</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#projections-commonly-used-in-various-applications">Projections commonly used in various applications</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projection-choice-and-application">Projection choice and application</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-numerical-modelling">For numerical modelling</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visulisation">Visulisation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regional-domain">Regional domain</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

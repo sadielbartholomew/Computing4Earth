@@ -1,28 +1,108 @@
 # Grids and Projections
 
-* Grids
-  * grid resolution
-    * horiztonal resolution
-    * vertical resolution
-  * regular vs. irregular vs.unstructured
-    * structured (rectangular/Cartesian) grids
-    * curvilinear grids
-    * irregular grids
-    * unstructured grids
-      * UGRID
-    * coordinate systems
-    * grid choice advantages and disadvantages
-  *  Vertical coodinates
-    * parametric and hybrid
-    * height vs. pressure
-  * Regridding
-    * Interpolation methods
-* Projections
-  * map projections and why they are needed
-  * distortions
-  * types of projections
-    * projections commonly used in various applications
-  * projection choice and application
-    * for numerical modelling
-    * visulisation
-    * regional domain
+TODO
+
+```{contents}
+```
+
+## Grids
+
+TODO
+
+### Grid resolution
+
+TODO
+
+#### Horiztonal resolution
+
+TODO
+
+#### Vertical resolution
+
+TODO
+
+### Regular vs. irregular vs.unstructured
+
+TODO
+
+#### Structured (rectangular/Cartesian) grids
+
+TODO
+
+#### Curvilinear grids
+
+TODO
+
+#### Irregular grids
+
+TODO
+
+#### Unstructured grids and UGRID
+
+TODO
+
+#### Coordinate systems
+
+TODO
+
+#### Grid choice advantages and disadvantages
+
+TODO
+
+###  Vertical coodinates
+
+TODO
+
+#### Parametric and hybrid
+
+TODO
+
+#### Height vs. pressure
+
+TODO
+
+### Regridding
+
+TODO
+
+#### Interpolation methods
+
+TODO
+
+***
+
+## Projections
+
+TODO
+
+### Map projections and why they are needed
+
+TODO
+
+### Distortions
+
+TODO
+
+### Types of projections
+
+TODO
+
+#### Projections commonly used in various applications
+
+TODO
+
+### Projection choice and application
+
+TODO
+
+#### For numerical modelling
+
+TODO
+
+#### Visulisation
+
+TODO
+
+#### Regional domain
+
+TODO

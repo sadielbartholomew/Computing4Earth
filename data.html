@@ -183,8 +183,9 @@
 <li class="toctree-l1"><a class="reference internal" href="modelling.html">Earth system modelling</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata.html">Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hpc.html">High-performance Computing (HPC) for Earth system science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="science.html">Basics of (aspects of) Earth System Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">High-performance Computing (HPC) for Earth System Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grids-and-projections.html">Grids and Projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="science.html">Basics of Earth System Science</a></li>
 </ul>
 
     </div>
@@ -357,7 +358,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -373,6 +376,35 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-categories">Data categories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-simulation-data">Model/simulation data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-data">Observational data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-e-g-satellites">Remote sensing e.g. satellites</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ground-based-tools-and-networks">Ground-based tools and networks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-stations-observatories">Weather stations/observatories</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-between-models-and-observations">Interfacing between models and observations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-formats">Data formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-standards">Data standards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-for-earth-system-science">Data Analysis for Earth System Science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-statistics">Common statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reanalysis">Reanalysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-metrics">Climate metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-and-attribution">Detection and attribution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-in-data">Uncertainty in data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-processing-of-data">Post-processing of data</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -383,34 +415,112 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="data">
-<h1>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Data</a><a class="headerlink" href="#data" title="Link to this heading">#</a></h1>
+<p>Note we treat metadata as a separate topic given its importance, though really it is a topic under data.</p>
+<p>TODO</p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p>Data formats</p></li>
-<li><p>Data categories</p>
+<li><p><a class="reference internal" href="#data" id="id1">Data</a></p>
 <ul>
-<li><p>Model/simulation data</p></li>
-<li><p>Observational data</p>
+<li><p><a class="reference internal" href="#data-categories" id="id2">Data categories</a></p>
 <ul>
-<li><p>Remote sensing e.g. satellites</p></li>
-<li><p>Ground-based tools and networks</p></li>
-<li><p>Weather stations/observatories</p></li>
+<li><p><a class="reference internal" href="#model-simulation-data" id="id3">Model/simulation data</a></p></li>
+<li><p><a class="reference internal" href="#observational-data" id="id4">Observational data</a></p>
+<ul>
+<li><p><a class="reference internal" href="#remote-sensing-e-g-satellites" id="id5">Remote sensing e.g. satellites</a></p></li>
+<li><p><a class="reference internal" href="#ground-based-tools-and-networks" id="id6">Ground-based tools and networks</a></p></li>
+<li><p><a class="reference internal" href="#weather-stations-observatories" id="id7">Weather stations/observatories</a></p></li>
 </ul>
 </li>
-<li><p>Interfacing between models and observations</p></li>
+<li><p><a class="reference internal" href="#interfacing-between-models-and-observations" id="id8">Interfacing between models and observations</a></p></li>
 </ul>
 </li>
-<li><p>Data standards</p></li>
-<li><p>Analysis</p>
+<li><p><a class="reference internal" href="#data-formats" id="id9">Data formats</a></p></li>
+<li><p><a class="reference internal" href="#data-standards" id="id10">Data standards</a></p></li>
+<li><p><a class="reference internal" href="#data-analysis-for-earth-system-science" id="id11">Data Analysis for Earth System Science</a></p>
 <ul>
-<li><p>Common statistics</p></li>
-<li><p>Reanalysis</p></li>
-<li><p>Climate metrics</p></li>
-<li><p>Detection and attribution</p></li>
+<li><p><a class="reference internal" href="#common-statistics" id="id12">Common statistics</a></p></li>
+<li><p><a class="reference internal" href="#reanalysis" id="id13">Reanalysis</a></p></li>
+<li><p><a class="reference internal" href="#climate-metrics" id="id14">Climate metrics</a></p></li>
+<li><p><a class="reference internal" href="#detection-and-attribution" id="id15">Detection and attribution</a></p></li>
 </ul>
 </li>
-<li><p>Uncertainities</p></li>
-<li><p>Post-processing</p></li>
+<li><p><a class="reference internal" href="#uncertainty-in-data" id="id16">Uncertainty in data</a></p></li>
+<li><p><a class="reference internal" href="#post-processing-of-data" id="id17">Post-processing of data</a></p></li>
 </ul>
+</li>
+</ul>
+</nav>
+<section id="data-categories">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Data categories</a><a class="headerlink" href="#data-categories" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="model-simulation-data">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Model/simulation data</a><a class="headerlink" href="#model-simulation-data" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="observational-data">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Observational data</a><a class="headerlink" href="#observational-data" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="remote-sensing-e-g-satellites">
+<h4><a class="toc-backref" href="#id5" role="doc-backlink">Remote sensing e.g. satellites</a><a class="headerlink" href="#remote-sensing-e-g-satellites" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="ground-based-tools-and-networks">
+<h4><a class="toc-backref" href="#id6" role="doc-backlink">Ground-based tools and networks</a><a class="headerlink" href="#ground-based-tools-and-networks" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="weather-stations-observatories">
+<h4><a class="toc-backref" href="#id7" role="doc-backlink">Weather stations/observatories</a><a class="headerlink" href="#weather-stations-observatories" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+<section id="interfacing-between-models-and-observations">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Interfacing between models and observations</a><a class="headerlink" href="#interfacing-between-models-and-observations" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="data-formats">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Data formats</a><a class="headerlink" href="#data-formats" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="data-standards">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Data standards</a><a class="headerlink" href="#data-standards" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="data-analysis-for-earth-system-science">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Data Analysis for Earth System Science</a><a class="headerlink" href="#data-analysis-for-earth-system-science" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="common-statistics">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Common statistics</a><a class="headerlink" href="#common-statistics" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="reanalysis">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Reanalysis</a><a class="headerlink" href="#reanalysis" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="climate-metrics">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Climate metrics</a><a class="headerlink" href="#climate-metrics" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="detection-and-attribution">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Detection and attribution</a><a class="headerlink" href="#detection-and-attribution" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="uncertainty-in-data">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Uncertainty in data</a><a class="headerlink" href="#uncertainty-in-data" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="post-processing-of-data">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Post-processing of data</a><a class="headerlink" href="#post-processing-of-data" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -467,6 +577,42 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-categories">Data categories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-simulation-data">Model/simulation data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-data">Observational data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-e-g-satellites">Remote sensing e.g. satellites</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ground-based-tools-and-networks">Ground-based tools and networks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-stations-observatories">Weather stations/observatories</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-between-models-and-observations">Interfacing between models and observations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-formats">Data formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-standards">Data standards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-for-earth-system-science">Data Analysis for Earth System Science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-statistics">Common statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reanalysis">Reanalysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-metrics">Climate metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detection-and-attribution">Detection and attribution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-in-data">Uncertainty in data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-processing-of-data">Post-processing of data</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

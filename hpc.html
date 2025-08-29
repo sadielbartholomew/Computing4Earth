@@ -358,7 +358,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -374,6 +376,73 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-need-for-hpc-in-earth-system-science">The need for HPC in Earth system science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatiotemporal-resolutions-and-timescales">Spatiotemporal resolutions and timescales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supercomputers">Supercomputers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tier-system-for-the-uk">Tier system for the UK</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-top500">The Top500</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmarking">Benchmarking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-eras">Performance eras</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exascale-era">Exascale era</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling">Scaling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-methods-and-algorithms">Numerical methods and algorithms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-decomposition">Domain decomposition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solvers-for-fluid-dynamics-navierstokes-equations">Solvers for fluid dynamics (Navier–Stokes equations)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures">Architectures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cpus-vs-gpus">CPUs vs. GPUs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-computing">Parallel computing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#openmp">OpenMP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mpi-message-passing-interface">MPI (Message Passing Interface)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-balancing">load balancing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compilers">Compilers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-specific">Domain-specific</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#job-runs">Job runs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#batch-scheduling">Batch scheduling</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflows">Workflows</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-engines-managers">Workflow engines/managers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-of-workflows">Configuration of workflows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management-i-o">Data Management &amp; I/O</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-output-i-o-strategies">Input/output (I/O) strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-compression">Data compression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-reduction">Data reduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-situ-analysis">In-situ analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-file-systems-e-g-lustre">Parallel file systems (e.g. Lustre)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#storage">Storage</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tiers">Tiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sustainability">Sustainability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-use-and-efficiency">Energy use and efficiency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-green500">The Green500</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hpc-to-support-ai-in-the-field">HPC to support AI in the field</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -384,80 +453,251 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="high-performance-computing-hpc-for-earth-system-science">
-<h1>High-performance Computing (HPC) for Earth System Science<a class="headerlink" href="#high-performance-computing-hpc-for-earth-system-science" title="Link to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">High-performance Computing (HPC) for Earth System Science</a><a class="headerlink" href="#high-performance-computing-hpc-for-earth-system-science" title="Link to this heading">#</a></h1>
+<p>TODO</p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p>The need for HPC in Earth system science</p>
+<li><p><a class="reference internal" href="#high-performance-computing-hpc-for-earth-system-science" id="id1">High-performance Computing (HPC) for Earth System Science</a></p>
 <ul>
-<li><p>spatiotemporal resolutions and timescales</p></li>
+<li><p><a class="reference internal" href="#the-need-for-hpc-in-earth-system-science" id="id2">The need for HPC in Earth system science</a></p>
+<ul>
+<li><p><a class="reference internal" href="#spatiotemporal-resolutions-and-timescales" id="id3">Spatiotemporal resolutions and timescales</a></p></li>
 </ul>
 </li>
-<li><p>Supercomputers</p>
+<li><p><a class="reference internal" href="#supercomputers" id="id4">Supercomputers</a></p>
 <ul>
-<li><p>tier system for the UK</p></li>
-<li><p>the Top500</p></li>
-<li><p>metrics</p></li>
-<li><p>benchmarking</p></li>
+<li><p><a class="reference internal" href="#tier-system-for-the-uk" id="id5">Tier system for the UK</a></p></li>
+<li><p><a class="reference internal" href="#the-top500" id="id6">The Top500</a></p></li>
+<li><p><a class="reference internal" href="#metrics" id="id7">Metrics</a></p></li>
+<li><p><a class="reference internal" href="#benchmarking" id="id8">Benchmarking</a></p></li>
 </ul>
 </li>
-<li><p>Performance eras</p>
+<li><p><a class="reference internal" href="#performance-eras" id="id9">Performance eras</a></p>
 <ul>
-<li><p>Exascale era</p></li>
+<li><p><a class="reference internal" href="#exascale-era" id="id10">Exascale era</a></p></li>
 </ul>
 </li>
-<li><p>Scaling</p></li>
-<li><p>Numerical methods and algorithms</p>
+<li><p><a class="reference internal" href="#scaling" id="id11">Scaling</a></p></li>
+<li><p><a class="reference internal" href="#numerical-methods-and-algorithms" id="id12">Numerical methods and algorithms</a></p>
 <ul>
-<li><p>domain decomposition</p></li>
-<li><p>solvers for fluid dynamics (Navier–Stokes equations)</p></li>
+<li><p><a class="reference internal" href="#domain-decomposition" id="id13">Domain decomposition</a></p></li>
+<li><p><a class="reference internal" href="#solvers-for-fluid-dynamics-navierstokes-equations" id="id14">Solvers for fluid dynamics (Navier–Stokes equations)</a></p></li>
 </ul>
 </li>
-<li><p>Architectures</p>
+<li><p><a class="reference internal" href="#architectures" id="id15">Architectures</a></p>
 <ul>
-<li><p>CPUs vs. GPUs</p></li>
+<li><p><a class="reference internal" href="#cpus-vs-gpus" id="id16">CPUs vs. GPUs</a></p></li>
 </ul>
 </li>
-<li><p>Parallel computing</p>
+<li><p><a class="reference internal" href="#parallel-computing" id="id17">Parallel computing</a></p>
 <ul>
-<li><p>OpenMP</p></li>
-<li><p>MPI (Message Passing Interface)</p></li>
-<li><p>load balancing</p></li>
-<li><p>compilers</p></li>
-<li><p>domain-specific</p></li>
+<li><p><a class="reference internal" href="#openmp" id="id18">OpenMP</a></p></li>
+<li><p><a class="reference internal" href="#mpi-message-passing-interface" id="id19">MPI (Message Passing Interface)</a></p></li>
+<li><p><a class="reference internal" href="#load-balancing" id="id20">load balancing</a></p></li>
+<li><p><a class="reference internal" href="#compilers" id="id21">Compilers</a></p></li>
+<li><p><a class="reference internal" href="#domain-specific" id="id22">Domain-specific</a></p></li>
 </ul>
 </li>
-<li><p>Job runs</p>
+<li><p><a class="reference internal" href="#job-runs" id="id23">Job runs</a></p>
 <ul>
-<li><p>batch scheduling</p></li>
+<li><p><a class="reference internal" href="#batch-scheduling" id="id24">Batch scheduling</a></p></li>
 </ul>
 </li>
-<li><p>Workflows</p>
+<li><p><a class="reference internal" href="#workflows" id="id25">Workflows</a></p>
 <ul>
-<li><p>workflow engines/managers</p></li>
-<li><p>configuration of workflows</p></li>
+<li><p><a class="reference internal" href="#workflow-engines-managers" id="id26">Workflow engines/managers</a></p></li>
+<li><p><a class="reference internal" href="#configuration-of-workflows" id="id27">Configuration of workflows</a></p></li>
 </ul>
 </li>
-<li><p>Data Management &amp; I/O</p>
+<li><p><a class="reference internal" href="#data-management-i-o" id="id28">Data Management &amp; I/O</a></p>
 <ul>
-<li><p>input/output (I/O) strategies</p></li>
-<li><p>data compression</p></li>
-<li><p>data reduction</p></li>
-<li><p>in-situ analysis</p></li>
-<li><p>parallel file systems (e.g. Lustre)</p></li>
-<li><p>storage</p>
+<li><p><a class="reference internal" href="#input-output-i-o-strategies" id="id29">Input/output (I/O) strategies</a></p></li>
+<li><p><a class="reference internal" href="#data-compression" id="id30">Data compression</a></p></li>
+<li><p><a class="reference internal" href="#data-reduction" id="id31">Data reduction</a></p></li>
+<li><p><a class="reference internal" href="#in-situ-analysis" id="id32">In-situ analysis</a></p></li>
+<li><p><a class="reference internal" href="#parallel-file-systems-e-g-lustre" id="id33">Parallel file systems (e.g. Lustre)</a></p></li>
+<li><p><a class="reference internal" href="#storage" id="id34">Storage</a></p>
 <ul>
-<li><p>tiers</p></li>
+<li><p><a class="reference internal" href="#tiers" id="id35">Tiers</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Sustainability</p>
+<li><p><a class="reference internal" href="#sustainability" id="id36">Sustainability</a></p>
 <ul>
-<li><p>energy use and efficiency</p></li>
-<li><p>the Green500</p></li>
+<li><p><a class="reference internal" href="#energy-use-and-efficiency" id="id37">Energy use and efficiency</a></p></li>
+<li><p><a class="reference internal" href="#the-green500" id="id38">The Green500</a></p></li>
 </ul>
 </li>
-<li><p>HPC to support AI in the field</p></li>
+<li><p><a class="reference internal" href="#hpc-to-support-ai-in-the-field" id="id39">HPC to support AI in the field</a></p></li>
 </ul>
+</li>
+</ul>
+</nav>
+<section id="the-need-for-hpc-in-earth-system-science">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">The need for HPC in Earth system science</a><a class="headerlink" href="#the-need-for-hpc-in-earth-system-science" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="spatiotemporal-resolutions-and-timescales">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Spatiotemporal resolutions and timescales</a><a class="headerlink" href="#spatiotemporal-resolutions-and-timescales" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="supercomputers">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Supercomputers</a><a class="headerlink" href="#supercomputers" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="tier-system-for-the-uk">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Tier system for the UK</a><a class="headerlink" href="#tier-system-for-the-uk" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="the-top500">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">The Top500</a><a class="headerlink" href="#the-top500" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="metrics">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Metrics</a><a class="headerlink" href="#metrics" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="benchmarking">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Benchmarking</a><a class="headerlink" href="#benchmarking" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="performance-eras">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Performance eras</a><a class="headerlink" href="#performance-eras" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="exascale-era">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Exascale era</a><a class="headerlink" href="#exascale-era" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="scaling">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Scaling</a><a class="headerlink" href="#scaling" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="numerical-methods-and-algorithms">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Numerical methods and algorithms</a><a class="headerlink" href="#numerical-methods-and-algorithms" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="domain-decomposition">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Domain decomposition</a><a class="headerlink" href="#domain-decomposition" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="solvers-for-fluid-dynamics-navierstokes-equations">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Solvers for fluid dynamics (Navier–Stokes equations)</a><a class="headerlink" href="#solvers-for-fluid-dynamics-navierstokes-equations" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="architectures">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Architectures</a><a class="headerlink" href="#architectures" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="cpus-vs-gpus">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">CPUs vs. GPUs</a><a class="headerlink" href="#cpus-vs-gpus" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="parallel-computing">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Parallel computing</a><a class="headerlink" href="#parallel-computing" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="openmp">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">OpenMP</a><a class="headerlink" href="#openmp" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="mpi-message-passing-interface">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">MPI (Message Passing Interface)</a><a class="headerlink" href="#mpi-message-passing-interface" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="load-balancing">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">load balancing</a><a class="headerlink" href="#load-balancing" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="compilers">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Compilers</a><a class="headerlink" href="#compilers" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="domain-specific">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Domain-specific</a><a class="headerlink" href="#domain-specific" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="job-runs">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">Job runs</a><a class="headerlink" href="#job-runs" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="batch-scheduling">
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">Batch scheduling</a><a class="headerlink" href="#batch-scheduling" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="workflows">
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">Workflows</a><a class="headerlink" href="#workflows" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="workflow-engines-managers">
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Workflow engines/managers</a><a class="headerlink" href="#workflow-engines-managers" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="configuration-of-workflows">
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Configuration of workflows</a><a class="headerlink" href="#configuration-of-workflows" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="data-management-i-o">
+<h2><a class="toc-backref" href="#id28" role="doc-backlink">Data Management &amp; I/O</a><a class="headerlink" href="#data-management-i-o" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="input-output-i-o-strategies">
+<h3><a class="toc-backref" href="#id29" role="doc-backlink">Input/output (I/O) strategies</a><a class="headerlink" href="#input-output-i-o-strategies" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="data-compression">
+<h3><a class="toc-backref" href="#id30" role="doc-backlink">Data compression</a><a class="headerlink" href="#data-compression" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="data-reduction">
+<h3><a class="toc-backref" href="#id31" role="doc-backlink">Data reduction</a><a class="headerlink" href="#data-reduction" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="in-situ-analysis">
+<h3><a class="toc-backref" href="#id32" role="doc-backlink">In-situ analysis</a><a class="headerlink" href="#in-situ-analysis" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="parallel-file-systems-e-g-lustre">
+<h3><a class="toc-backref" href="#id33" role="doc-backlink">Parallel file systems (e.g. Lustre)</a><a class="headerlink" href="#parallel-file-systems-e-g-lustre" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="storage">
+<h3><a class="toc-backref" href="#id34" role="doc-backlink">Storage</a><a class="headerlink" href="#storage" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+<section id="tiers">
+<h4><a class="toc-backref" href="#id35" role="doc-backlink">Tiers</a><a class="headerlink" href="#tiers" title="Link to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sustainability">
+<h2><a class="toc-backref" href="#id36" role="doc-backlink">Sustainability</a><a class="headerlink" href="#sustainability" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+<section id="energy-use-and-efficiency">
+<h3><a class="toc-backref" href="#id37" role="doc-backlink">Energy use and efficiency</a><a class="headerlink" href="#energy-use-and-efficiency" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="the-green500">
+<h3><a class="toc-backref" href="#id38" role="doc-backlink">The Green500</a><a class="headerlink" href="#the-green500" title="Link to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hpc-to-support-ai-in-the-field">
+<h2><a class="toc-backref" href="#id39" role="doc-backlink">HPC to support AI in the field</a><a class="headerlink" href="#hpc-to-support-ai-in-the-field" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -514,6 +754,80 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-need-for-hpc-in-earth-system-science">The need for HPC in Earth system science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatiotemporal-resolutions-and-timescales">Spatiotemporal resolutions and timescales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supercomputers">Supercomputers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tier-system-for-the-uk">Tier system for the UK</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-top500">The Top500</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmarking">Benchmarking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-eras">Performance eras</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exascale-era">Exascale era</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling">Scaling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-methods-and-algorithms">Numerical methods and algorithms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-decomposition">Domain decomposition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solvers-for-fluid-dynamics-navierstokes-equations">Solvers for fluid dynamics (Navier–Stokes equations)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures">Architectures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cpus-vs-gpus">CPUs vs. GPUs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-computing">Parallel computing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#openmp">OpenMP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mpi-message-passing-interface">MPI (Message Passing Interface)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-balancing">load balancing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compilers">Compilers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-specific">Domain-specific</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#job-runs">Job runs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#batch-scheduling">Batch scheduling</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflows">Workflows</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-engines-managers">Workflow engines/managers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-of-workflows">Configuration of workflows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management-i-o">Data Management &amp; I/O</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-output-i-o-strategies">Input/output (I/O) strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-compression">Data compression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-reduction">Data reduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-situ-analysis">In-situ analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-file-systems-e-g-lustre">Parallel file systems (e.g. Lustre)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#storage">Storage</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tiers">Tiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sustainability">Sustainability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-use-and-efficiency">Energy use and efficiency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-green500">The Green500</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hpc-to-support-ai-in-the-field">HPC to support AI in the field</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
