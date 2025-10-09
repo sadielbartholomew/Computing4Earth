@@ -85,6 +85,14 @@ TODO
 
 TODO
 
+### Orography
+
+TODO
+
+#### Gravity Waves
+
+TODO
+
 ***
 
 ## Climate dynamics and processes
