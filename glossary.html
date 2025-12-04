@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Earth system modelling &#8212; Computing for Earth</title>
+    <title>Glossary and Acronyms &#8212; Computing for Earth</title>
   
   
   
@@ -57,11 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modelling';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'glossary';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data" href="data.html" />
-    <link rel="prev" title="Introduction: Computing4Earth" href="intro.html" />
+    <link rel="prev" title="Basics of Earth System Science" href="science.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,12 +179,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Earth system modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modelling.html">Earth system modelling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata.html">Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hpc.html">High-performance Computing (HPC) for Earth System Science</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grids-and-projections.html">Grids and Projections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="science.html">Basics of Earth System Science</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Glossary and Acronyms</a></li>
 </ul>
 
     </div>
@@ -257,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/sadielbartholomew/Computing4Earth/issues/new?title=Issue%20on%20page%20%2Fmodelling.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/sadielbartholomew/Computing4Earth/issues/new?title=Issue%20on%20page%20%2Fglossary.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +287,7 @@
       
       
       
-      <li><a href="_sources/modelling.md" target="_blank"
+      <li><a href="_sources/glossary.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -358,9 +358,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -371,41 +369,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Earth system modelling</h1>
+    <h1>Glossary and Acronyms</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-and-simulation">Modelling and simulation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-types">Model types</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcm-vs-esm">GCM vs. ESM</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#components-and-example-models">Components and example models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atmosphere">Atmosphere</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean">Ocean</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#land-surface">Land surface</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cryosphere">Cryosphere</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biosphere-terrestrial-and-marine">Biosphere: terrestrial and marine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biogeochemical-cycles">Biogeochemical cycles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anthroposphere-i-e-human-systems">Anthroposphere (i.e. human systems)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coupling-components">Coupling components</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coupled-models">Coupled models</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-assimilation">Data Assimilation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ensembles">Ensembles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-vs-regional-climate-models">Global vs. regional climate models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-intercomparison-projects">Model intercomparison (projects)</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -415,122 +383,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="earth-system-modelling">
-<h1><a class="toc-backref" href="#id1" role="doc-backlink">Earth system modelling</a><a class="headerlink" href="#earth-system-modelling" title="Link to this heading">#</a></h1>
-<p>TODO</p>
-<nav class="contents" id="contents">
-<p class="topic-title">Contents</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#earth-system-modelling" id="id1">Earth system modelling</a></p>
-<ul>
-<li><p><a class="reference internal" href="#modelling-and-simulation" id="id2">Modelling and simulation</a></p></li>
-<li><p><a class="reference internal" href="#model-types" id="id3">Model types</a></p>
-<ul>
-<li><p><a class="reference internal" href="#gcm-vs-esm" id="id4">GCM vs. ESM</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#components-and-example-models" id="id5">Components and example models</a></p>
-<ul>
-<li><p><a class="reference internal" href="#atmosphere" id="id6">Atmosphere</a></p></li>
-<li><p><a class="reference internal" href="#ocean" id="id7">Ocean</a></p></li>
-<li><p><a class="reference internal" href="#land-surface" id="id8">Land surface</a></p></li>
-<li><p><a class="reference internal" href="#cryosphere" id="id9">Cryosphere</a></p></li>
-<li><p><a class="reference internal" href="#biosphere-terrestrial-and-marine" id="id10">Biosphere: terrestrial and marine</a></p></li>
-<li><p><a class="reference internal" href="#biogeochemical-cycles" id="id11">Biogeochemical cycles</a></p></li>
-<li><p><a class="reference internal" href="#anthroposphere-i-e-human-systems" id="id12">Anthroposphere (i.e. human systems)</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#coupling-components" id="id13">Coupling components</a></p>
-<ul>
-<li><p><a class="reference internal" href="#coupled-models" id="id14">Coupled models</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#data-assimilation" id="id15">Data Assimilation</a></p></li>
-<li><p><a class="reference internal" href="#ensembles" id="id16">Ensembles</a></p></li>
-<li><p><a class="reference internal" href="#global-vs-regional-climate-models" id="id17">Global vs. regional climate models</a></p></li>
-<li><p><a class="reference internal" href="#model-intercomparison-projects" id="id18">Model intercomparison (projects)</a></p></li>
-</ul>
-</li>
-</ul>
-</nav>
-<section id="modelling-and-simulation">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Modelling and simulation</a><a class="headerlink" href="#modelling-and-simulation" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<section id="model-types">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Model types</a><a class="headerlink" href="#model-types" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-<section id="gcm-vs-esm">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">GCM vs. ESM</a><a class="headerlink" href="#gcm-vs-esm" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="components-and-example-models">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Components and example models</a><a class="headerlink" href="#components-and-example-models" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-<section id="atmosphere">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Atmosphere</a><a class="headerlink" href="#atmosphere" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-<section id="ocean">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Ocean</a><a class="headerlink" href="#ocean" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-<section id="land-surface">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Land surface</a><a class="headerlink" href="#land-surface" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-<section id="cryosphere">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Cryosphere</a><a class="headerlink" href="#cryosphere" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-<p>I.e. land ice (glaciers, ice sheets) and sea ice</p>
-<p>TODO</p>
-</section>
-<section id="biosphere-terrestrial-and-marine">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Biosphere: terrestrial and marine</a><a class="headerlink" href="#biosphere-terrestrial-and-marine" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-<section id="biogeochemical-cycles">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Biogeochemical cycles</a><a class="headerlink" href="#biogeochemical-cycles" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-<p>E.g. carbon cycle,nitrogen, sulfur, phosphorus cycles</p>
-<p>TODO</p>
-</section>
-<section id="anthroposphere-i-e-human-systems">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Anthroposphere (i.e. human systems)</a><a class="headerlink" href="#anthroposphere-i-e-human-systems" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="coupling-components">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Coupling components</a><a class="headerlink" href="#coupling-components" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-<section id="coupled-models">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Coupled models</a><a class="headerlink" href="#coupled-models" title="Link to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="data-assimilation">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink">Data Assimilation</a><a class="headerlink" href="#data-assimilation" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<hr class="docutils" />
-<section id="ensembles">
-<h2><a class="toc-backref" href="#id16" role="doc-backlink">Ensembles</a><a class="headerlink" href="#ensembles" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<hr class="docutils" />
-<section id="global-vs-regional-climate-models">
-<h2><a class="toc-backref" href="#id17" role="doc-backlink">Global vs. regional climate models</a><a class="headerlink" href="#global-vs-regional-climate-models" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<hr class="docutils" />
-<section id="model-intercomparison-projects">
-<h2><a class="toc-backref" href="#id18" role="doc-backlink">Model intercomparison (projects)</a><a class="headerlink" href="#model-intercomparison-projects" title="Link to this heading">#</a></h2>
-<p>TODO</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="glossary-and-acronyms">
+<h1>Glossary and Acronyms<a class="headerlink" href="#glossary-and-acronyms" title="Link to this heading">#</a></h1>
+<dl class="simple glossary">
+<dt id="term-GCM">GCM<a class="headerlink" href="#term-GCM" title="Link to this term">#</a></dt><dd><p>TODO definition goes here.</p>
+</dd>
+<dt id="term-ESM">ESM<a class="headerlink" href="#term-ESM" title="Link to this term">#</a></dt><dd><p>TODO definition goes here.</p>
+</dd>
+<dt id="term-HPC">HPC<a class="headerlink" href="#term-HPC" title="Link to this term">#</a></dt><dd><p>TODO definition goes here.</p>
+</dd>
+</dl>
 </section>
 
     <script type="text/x-thebe-config">
@@ -564,22 +426,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="science.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction: Computing4Earth</p>
+        <p class="prev-next-title">Basics of Earth System Science</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="data.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -587,43 +440,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-and-simulation">Modelling and simulation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-types">Model types</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcm-vs-esm">GCM vs. ESM</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#components-and-example-models">Components and example models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atmosphere">Atmosphere</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean">Ocean</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#land-surface">Land surface</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cryosphere">Cryosphere</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biosphere-terrestrial-and-marine">Biosphere: terrestrial and marine</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biogeochemical-cycles">Biogeochemical cycles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anthroposphere-i-e-human-systems">Anthroposphere (i.e. human systems)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coupling-components">Coupling components</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coupled-models">Coupled models</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-assimilation">Data Assimilation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ensembles">Ensembles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-vs-regional-climate-models">Global vs. regional climate models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-intercomparison-projects">Model intercomparison (projects)</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

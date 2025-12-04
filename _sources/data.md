@@ -80,3 +80,19 @@ TODO
 ## Post-processing of data
 
 TODO
+
+***
+
+## Accessing data
+
+TODO
+
+### Data portals
+
+TODO
+
+### Data catalogues
+
+TODO
+
+***
