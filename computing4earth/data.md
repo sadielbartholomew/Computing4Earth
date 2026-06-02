@@ -5,6 +5,7 @@ Note we treat metadata as a separate topic given its importance, though really i
 TODO
 
 ```{contents}
+:local:
 ```
 
 ## Data categories
