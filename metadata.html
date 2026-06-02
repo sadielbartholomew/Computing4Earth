@@ -186,7 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="hpc.html">High-performance Computing (HPC) for Earth System Science</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grids-and-projections.html">Grids and Projections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="science.html">Basics of Earth System Science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary and Acronyms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary-and-acronyms.html">Glossary and Acronyms</a></li>
 </ul>
 
     </div>
@@ -414,35 +414,30 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="metadata">
-<h1><a class="toc-backref" href="#id1" role="doc-backlink">Metadata</a><a class="headerlink" href="#metadata" title="Link to this heading">#</a></h1>
+<h1>Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h1>
 <p>TODO</p>
-<nav class="contents" id="contents">
-<p class="topic-title">Contents</p>
+<nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#metadata" id="id1">Metadata</a></p>
+<li><p><a class="reference internal" href="#metadata-in-general" id="id1">Metadata (in general)</a></p></li>
+<li><p><a class="reference internal" href="#metadata-in-earth-science" id="id2">Metadata in Earth Science</a></p>
 <ul>
-<li><p><a class="reference internal" href="#metadata-in-general" id="id2">Metadata (in general)</a></p></li>
-<li><p><a class="reference internal" href="#metadata-in-earth-science" id="id3">Metadata in Earth Science</a></p>
-<ul>
-<li><p><a class="reference internal" href="#types-of-metadata" id="id4">Types of metadata</a></p></li>
-<li><p><a class="reference internal" href="#fair-principles" id="id5">FAIR Principles</a></p></li>
+<li><p><a class="reference internal" href="#types-of-metadata" id="id3">Types of metadata</a></p></li>
+<li><p><a class="reference internal" href="#fair-principles" id="id4">FAIR Principles</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#metadata-standards" id="id6">Metadata standards</a></p>
+<li><p><a class="reference internal" href="#metadata-standards" id="id5">Metadata standards</a></p>
 <ul>
-<li><p><a class="reference internal" href="#coards-conventions" id="id7">COARDS Conventions</a></p></li>
-<li><p><a class="reference internal" href="#cf-conventions" id="id8">CF Conventions</a></p>
+<li><p><a class="reference internal" href="#coards-conventions" id="id6">COARDS Conventions</a></p></li>
+<li><p><a class="reference internal" href="#cf-conventions" id="id7">CF Conventions</a></p>
 <ul>
-<li><p><a class="reference internal" href="#cmor" id="id9">CMOR</a></p></li>
+<li><p><a class="reference internal" href="#cmor" id="id8">CMOR</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#technicalities" id="id10">Technicalities</a></p>
+<li><p><a class="reference internal" href="#technicalities" id="id9">Technicalities</a></p>
 <ul>
-<li><p><a class="reference internal" href="#data-model" id="id11">Data Model</a></p></li>
-<li><p><a class="reference internal" href="#core-terminology-and-concepts" id="id12">Core terminology and concepts</a></p></li>
-<li><p><a class="reference internal" href="#standard-names" id="id13">Standard Names</a></p></li>
-</ul>
-</li>
+<li><p><a class="reference internal" href="#data-model" id="id10">Data Model</a></p></li>
+<li><p><a class="reference internal" href="#core-terminology-and-concepts" id="id11">Core terminology and concepts</a></p></li>
+<li><p><a class="reference internal" href="#standard-names" id="id12">Standard Names</a></p></li>
 </ul>
 </li>
 </ul>
@@ -450,21 +445,21 @@ document.write(`
 </ul>
 </nav>
 <section id="metadata-in-general">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Metadata (in general)</a><a class="headerlink" href="#metadata-in-general" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Metadata (in general)</a><a class="headerlink" href="#metadata-in-general" title="Link to this heading">#</a></h2>
 <p>Metadata is data that describes other data. In general, it provides contextual information that
 summarises given data to make it easier to identify it, to search for it, and to manage and use it.
 For example, in a data archive or catalog, metadata provies an overview of what data is available
 to form an inventory, to organise the data, and to enable users to filter and search through it.</p>
 </section>
 <section id="metadata-in-earth-science">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Metadata in Earth Science</a><a class="headerlink" href="#metadata-in-earth-science" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Metadata in Earth Science</a><a class="headerlink" href="#metadata-in-earth-science" title="Link to this heading">#</a></h2>
 <p>In earth science, metadata is especially important because there are myriad sources and forms of
 data: for example, datasets can originate from observations or from computer models, and we must
 be careful to detail the details of e.g. remote sensing algorithms etc. in the former case or of the
 simulation and initial conditions etc. for the latter case.</p>
 <hr class="docutils" />
 <section id="types-of-metadata">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Types of metadata</a><a class="headerlink" href="#types-of-metadata" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Types of metadata</a><a class="headerlink" href="#types-of-metadata" title="Link to this heading">#</a></h3>
 <p>Metadata can be classified in different ways. A classification that is useful for earth science
 application is the ‘NDG metadata taxonomy’ described in the paper Lawrence et al, 2008,  <a class="reference external" href="https://doi.org/10.1098/rsta.2008.0237">https://doi.org/10.1098/rsta.2008.0237</a>, which centers on an “Archive–Browse–Character–Discovery–Extra” taxonomy
 as summarised below:</p>
@@ -478,39 +473,39 @@ as summarised below:</p>
 <p>[include image: <a class="reference external" href="https://www.researchgate.net/publication/23668864/figure/fig2/AS:601680869589001&#64;1520463306397/Dataset-metadata-taxonomy.png">https://www.researchgate.net/publication/23668864/figure/fig2/AS:601680869589001&#64;1520463306397/Dataset-metadata-taxonomy.png</a>]</p>
 </section>
 <section id="fair-principles">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">FAIR Principles</a><a class="headerlink" href="#fair-principles" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">FAIR Principles</a><a class="headerlink" href="#fair-principles" title="Link to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="metadata-standards">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Metadata standards</a><a class="headerlink" href="#metadata-standards" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Metadata standards</a><a class="headerlink" href="#metadata-standards" title="Link to this heading">#</a></h2>
 <p>TODO</p>
 <section id="coards-conventions">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">COARDS Conventions</a><a class="headerlink" href="#coards-conventions" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">COARDS Conventions</a><a class="headerlink" href="#coards-conventions" title="Link to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="cf-conventions">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">CF Conventions</a><a class="headerlink" href="#cf-conventions" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">CF Conventions</a><a class="headerlink" href="#cf-conventions" title="Link to this heading">#</a></h3>
 <p>TODO</p>
 <section id="cmor">
-<h4><a class="toc-backref" href="#id9" role="doc-backlink">CMOR</a><a class="headerlink" href="#cmor" title="Link to this heading">#</a></h4>
+<h4><a class="toc-backref" href="#id8" role="doc-backlink">CMOR</a><a class="headerlink" href="#cmor" title="Link to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 <section id="technicalities">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Technicalities</a><a class="headerlink" href="#technicalities" title="Link to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Technicalities</a><a class="headerlink" href="#technicalities" title="Link to this heading">#</a></h3>
 <p>TODO</p>
 <section id="data-model">
-<h4><a class="toc-backref" href="#id11" role="doc-backlink">Data Model</a><a class="headerlink" href="#data-model" title="Link to this heading">#</a></h4>
+<h4><a class="toc-backref" href="#id10" role="doc-backlink">Data Model</a><a class="headerlink" href="#data-model" title="Link to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="core-terminology-and-concepts">
-<h4><a class="toc-backref" href="#id12" role="doc-backlink">Core terminology and concepts</a><a class="headerlink" href="#core-terminology-and-concepts" title="Link to this heading">#</a></h4>
+<h4><a class="toc-backref" href="#id11" role="doc-backlink">Core terminology and concepts</a><a class="headerlink" href="#core-terminology-and-concepts" title="Link to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="standard-names">
-<h4><a class="toc-backref" href="#id13" role="doc-backlink">Standard Names</a><a class="headerlink" href="#standard-names" title="Link to this heading">#</a></h4>
+<h4><a class="toc-backref" href="#id12" role="doc-backlink">Standard Names</a><a class="headerlink" href="#standard-names" title="Link to this heading">#</a></h4>
 <p>TODO</p>
 <hr class="docutils" />
 </section>

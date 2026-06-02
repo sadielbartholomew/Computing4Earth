@@ -3,6 +3,7 @@
 TODO
 
 ```{contents}
+:local:
 ```
 
 ## The need for HPC in Earth system science
