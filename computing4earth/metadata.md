@@ -13,6 +13,17 @@ summarises given data to make it easier to identify it, to search for it, and to
 For example, in a data archive or catalog, metadata provies an overview of what data is available
 to form an inventory, to organise the data, and to enable users to filter and search through it.
 
+```{tip}
+A good way to understand metadata and its importance is to think of a library of books. The
+metadata includes such core informatxion as the book title, author(s), and classification by
+subject matter or theme (guiding what section or shelf it gets placed on). Imagine trying to
+locate a given book or organise them without carefully labelled metadata - we would have to
+consult the pages of text individually each time.
+
+And for array-based data, comparing without metadata would be even more of a challenge
+because it would require consulting raw numbers (often in binary form so 0s and 1s only!) and
+trying to interpret these without any context.
+```
 
 ## Metadata in Earth Science
 
