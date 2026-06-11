@@ -1,7 +1,9 @@
 # Data
 
-Note we treat metadata as a separate topic given its importance, though really it is a topic under data.
-
+```{note}
+We treat *meta*data as a separate topic given its importance, though really it is a topic under data
+so belongs under this section.
+```
 TODO
 
 ```{contents}
