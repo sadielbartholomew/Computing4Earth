@@ -14,10 +14,10 @@ CF
     **Climate and Forecast Conventions**; a metadata standard that promotes consistent description and interoperability of climate and geoscience datasets.
 
 CMIP
-    **Coupled Model Intercomparison Project**; an international framework for coordinating climate model experiments and comparing results across modelling centres.
+    **Coupled Model Intercomparison Project**; an international framework (a major {term}`MIP`) for coordinating climate model experiments and comparing results across modelling centres.
 
 CMOR
-    **Climate Model Output Rewriter**; software used to convert climate model output into standardised formats and metadata conventions required by projects such as CMIP.
+    **Climate Model Output Rewriter**; software used to convert climate model output into standardised formats and metadata conventions required by projects such as {term}`CMIP`.
 
 CPU
     **Central Processing Unit**; the primary processor in a computer that executes program instructions and performs general-purpose computations.
@@ -68,7 +68,7 @@ OPeNDAP
     **Open-source Project for a Network Data Access Protocol**; a protocol that enables remote access to scientific datasets over a network.
 
 RCM
-    **Regional Climate Model**; a high-resolution climate model used to simulate climate processes over a limited geographical area.
+    **Regional Climate Model**; a high-resolution climate model used to simulate climate processes over a limited geographical area, typically driven by boundary conditions from a {term}`GCM` or {term}`ESM`.
 
 SLR
     **Sea-Level Rise**; the long-term increase in global or regional sea level driven primarily by ocean warming and land-ice loss.
