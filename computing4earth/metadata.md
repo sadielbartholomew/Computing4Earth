@@ -1,6 +1,6 @@
 # Metadata
 
-TODO
+[TODO introduce topic]
 
 ```{contents}
 :local:
@@ -36,7 +36,7 @@ simulation and initial conditions etc. for the latter case.
 
 ### Types of metadata
 
-Metadata can be classified in different ways. A classification that is particularly useful for Earth science applications is the **NDG metadata taxonomy** described by Lawrence et al. (2008) (https://doi.org/10.1098/rsta.2008.0237). The taxonomy centres on five categories:
+Metadata can be classified in different ways. A classification that is particularly useful for Earth science applications is the **NDG metadata taxonomy** described by Lawrence et al.  {cite}`lawrence2008`. The taxonomy centres on five categories:
 
 | Category                       | Description                                                                                                             |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
@@ -54,7 +54,7 @@ width: 80%
 name: ndg-metadata-taxonomy
 alt: NDG metadata taxonomy from Lawrence et al. (2008)
 ---
-The NDG metadata taxonomy. Source: Lawrence et al. (2008).
+The NDG metadata taxonomy. Source: {cite}`lawrence2008`, Figure 2.
 ```
 
 
@@ -97,3 +97,8 @@ TODO
 TODO
 
 ***
+
+## References
+
+```{bibliography}
+```
