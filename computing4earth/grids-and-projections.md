@@ -87,11 +87,11 @@ TODO
 
 | Grid type | Example model/project | Diagram | Typical use | Main advantages | Main disadvantages |
 |------------|------------|------------|------------|----------------|-------------------|
-| Regular latitude–longitude | HadGEM3-GC | *(Insert lat–lon grid figure)* | Global atmosphere and climate models and analysis products | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
-| Rotated latitude–longitude | Regional UM (Met Office product) configurations, CORDEX domains | *(Insert rotated lat–lon figure)* | Regional atmosphere and climate models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
-| Tripolar | NEMO (Nucleus for European Modelling of the Ocean, European consortium product) | *(Insert tripolar grid figure)* | Ocean and sea-ice models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
-| Cubed sphere | LFRic (Met Office product) | *(Insert cubed-sphere figure)* | Modern atmosphere and coupled models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
-| Icosahedral | ICON (ICOsahedral Non-hydrostatic, DWD and MPI-M product) | *(Insert icosahedral grid figure)* | Modern atmosphere models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Regular latitude–longitude | HadGEM3-GC (Met Office Hadley Centre) | *(Insert lat–lon grid figure)* | • Global atmosphere and climate models<br>•  Analysis products | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Rotated latitude–longitude | Regional UM (Met Office) configurations, CORDEX (Coordinated Regional Climate Downscaling Experiment, World Climate Research Programme) domains | *(Insert rotated lat–lon figure)* | Regional atmosphere and climate models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Tripolar | NEMO (Nucleus for European Modelling of the Ocean, European consortium) | *(Insert tripolar grid figure)* | Ocean and sea-ice models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Cubed sphere | LFRic (Met Office) | *(Insert cubed-sphere figure)* | Modern atmosphere and coupled models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Icosahedral | ICON (ICOsahedral Non-hydrostatic, DWD and MPI-M) | *(Insert icosahedral grid figure)* | Modern atmosphere models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
 
 ###  Vertical coodinates
 
