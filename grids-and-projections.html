@@ -498,12 +498,13 @@ Earth is still not a perfect sphere. Technically it is an oblate spheroid, a lit
 the centre due to its rotation and subsequent centrifugal forces on it. However, for
 the purposes of earth system modelling, it is generally treated as a sphere.</p>
 <insert diagram of Earth shape>
-<p>In order to understand absolute and relative spatial locations, a grid system is
-needed - it pinpoints locations on and abovethe sphere to which Earth is approximated
-as in shape. Vertical levels can then be created by considering the cells projected
-upwards from the zero point of the grid (often the Earth’s surface) - or in rare
+<p>In order to pinpoint absolute and relative spatial locations on this sphere to which
+Earth is approximated as in shape, a horizontal grid system is needed. Vertical levels can
+then be created (if relevant) by considering the cells projected
+upwards from some defined lowest vertical level of the grid (often the Earth’s surface) - or in rare
 cases may be defined differently.</p>
-<p>By splitting up the Earth into small cells formed by the grid
+<p>Grid subdivisions
+By splitting up the Earth into small cells formed by the grid
 sudivisions, we can TODO</p>
 <p>The majority of grid systems utilise the concept of latitude and longitude, imaginary
 lines that divide the Earth into sections - together they form there own grid, the
@@ -557,7 +558,55 @@ degrees east for longitude and degrees west for latitude.</p>
 </section>
 <section id="grid-choice-advantages-and-disadvantages">
 <h4><a class="toc-backref" href="#id12" role="doc-backlink">Grid choice advantages and disadvantages</a><a class="headerlink" href="#grid-choice-advantages-and-disadvantages" title="Link to this heading">#</a></h4>
-<p>TODO</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Grid type</p></th>
+<th class="head"><p>Example model/project</p></th>
+<th class="head"><p>Diagram</p></th>
+<th class="head"><p>Typical use</p></th>
+<th class="head"><p>Main advantages</p></th>
+<th class="head"><p>Main disadvantages</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Regular latitude–longitude</p></td>
+<td><p>HadGEM3-GC (Met Office Hadley Centre)</p></td>
+<td><p><em>(Insert lat–lon grid figure)</em></p></td>
+<td><p>• Global atmosphere and climate models<br>•  Analysis products</p></td>
+<td><p>• Conceptually simple<br>• Easy analysis and visualisation<br>• Structured indexing<br>• Mature numerical methods</p></td>
+<td><p>• Polar singularities<br>• Non-uniform cell areas<br>• Restrictive polar time steps</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rotated latitude–longitude</p></td>
+<td><p>Regional UM (Met Office) configurations, CORDEX (Coordinated Regional Climate Downscaling Experiment, World Climate Research Programme) domains</p></td>
+<td><p><em>(Insert rotated lat–lon figure)</em></p></td>
+<td><p>Regional atmosphere and climate models</p></td>
+<td><p><em>(Insert dis/advantages)</em></p></td>
+<td><p><em>(Insert dis/advantages)</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Tripolar</p></td>
+<td><p>NEMO (Nucleus for European Modelling of the Ocean, European consortium)</p></td>
+<td><p><em>(Insert tripolar grid figure)</em></p></td>
+<td><p>Ocean and sea-ice models</p></td>
+<td><p>• No Arctic singularity<br>• Widely used in ocean modelling</p></td>
+<td><p>• (Distortion near) artificial poles<br>• More complex geometry than regular lat-lon grid<br>• Limited atmospheric use</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cubed sphere</p></td>
+<td><p>LFRic (Met Office)</p></td>
+<td><p><em>(Insert cubed-sphere figure)</em></p></td>
+<td><p>Modern atmosphere and coupled models</p></td>
+<td><p><em>(Insert dis/advantages)</em></p></td>
+<td><p><em>(Insert dis/advantages)</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Icosahedral</p></td>
+<td><p>ICON (ICOsahedral Non-hydrostatic, DWD and MPI-M)</p></td>
+<td><p><em>(Insert icosahedral grid figure)</em></p></td>
+<td><p>Modern atmosphere models</p></td>
+<td><p><em>(Insert dis/advantages)</em></p></td>
+<td><p><em>(Insert dis/advantages)</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 <section id="vertical-coodinates">

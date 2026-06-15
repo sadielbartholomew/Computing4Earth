@@ -14,12 +14,13 @@ the purposes of earth system modelling, it is generally treated as a sphere.
 
 <insert diagram of Earth shape>
 
-In order to understand absolute and relative spatial locations, a grid system is
-needed - it pinpoints locations on and abovethe sphere to which Earth is approximated
-as in shape. Vertical levels can then be created by considering the cells projected
-upwards from the zero point of the grid (often the Earth's surface) - or in rare
+In order to pinpoint absolute and relative spatial locations on this sphere to which
+Earth is approximated as in shape, a horizontal grid system is needed. Vertical levels can
+then be created (if relevant) by considering the cells projected
+upwards from some defined lowest vertical level of the grid (often the Earth's surface) - or in rare
 cases may be defined differently.
 
+Grid subdivisions 
 By splitting up the Earth into small cells formed by the grid
 sudivisions, we can TODO
 
@@ -84,7 +85,13 @@ TODO
 
 #### Grid choice advantages and disadvantages
 
-TODO
+| Grid type | Example model/project | Diagram | Typical use | Main advantages | Main disadvantages |
+|------------|------------|------------|------------|----------------|-------------------|
+| Regular latitude–longitude | HadGEM3-GC (Met Office Hadley Centre) | *(Insert lat–lon grid figure)* | • Global atmosphere and climate models<br>•  Analysis products | • Conceptually simple<br>• Easy analysis and visualisation<br>• Structured indexing<br>• Mature numerical methods | • Polar singularities<br>• Non-uniform cell areas<br>• Restrictive polar time steps |
+| Rotated latitude–longitude | Regional UM (Met Office) configurations, CORDEX (Coordinated Regional Climate Downscaling Experiment, World Climate Research Programme) domains | *(Insert rotated lat–lon figure)* | Regional atmosphere and climate models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Tripolar | NEMO (Nucleus for European Modelling of the Ocean, European consortium) | *(Insert tripolar grid figure)* | Ocean and sea-ice models | • No Arctic singularity<br>• Widely used in ocean modelling | • (Distortion near) artificial poles<br>• More complex geometry than regular lat-lon grid<br>• Limited atmospheric use |
+| Cubed sphere | LFRic (Met Office) | *(Insert cubed-sphere figure)* | Modern atmosphere and coupled models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
+| Icosahedral | ICON (ICOsahedral Non-hydrostatic, DWD and MPI-M) | *(Insert icosahedral grid figure)* | Modern atmosphere models | *(Insert dis/advantages)*  | *(Insert dis/advantages)* |
 
 ###  Vertical coodinates
 
