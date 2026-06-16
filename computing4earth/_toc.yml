@@ -8,7 +8,7 @@ chapters:
 - file: data
 - file: metadata
 - file: hpc
-- file: grids-and-projections
+- file: grids-coords-projections
 - file: science
 - file: glossary-and-acronyms
 
