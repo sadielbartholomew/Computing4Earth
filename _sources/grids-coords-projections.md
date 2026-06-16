@@ -1,4 +1,4 @@
-# Grids and Projections
+# Grids, Coordinates and Projections
 
 
 ```{contents}
