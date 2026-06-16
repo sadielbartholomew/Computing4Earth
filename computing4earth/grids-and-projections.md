@@ -7,7 +7,7 @@
 
 ## Grids and coordinate systems
 
-Ignoring local surface variations (mountains etc. - see orography), the
+Ignoring local surface variations such as hills and mountains (see orography), the
 Earth is still not a perfect sphere. Technically it is an oblate spheroid, a little wider in
 the centre due to its rotation and subsequent centrifugal forces on it. However, for
 the purposes of earth system modelling, it is generally treated as a sphere.
@@ -16,9 +16,9 @@ the purposes of earth system modelling, it is generally treated as a sphere.
 
 In order to pinpoint absolute and relative spatial locations on this sphere to which
 Earth is approximated as in shape, a horizontal coordinate system is needed. Vertical levels can
-then be created (if relevant) by considering space  projected
-upwards from some defined lowest vertical level of the coordinate system, which is often the Earth's
-surface (or in rare cases may be defined differently).
+then be created (if relevant), often by considering the space projected
+upwards from some defined lowest vertical level of the coordinate system, often the Earth's
+surface.
 
 ### Geographic coordinate system
 
@@ -51,8 +51,10 @@ North to South Pole through Greenwich, London, UK.
 
 A grid system partitions the Earth or relevant area on it into cells for numerical computation.
 
-While coordinate systems are frameworks for describing locations, grids are frameworks
-for dividing space.
+```{tip}
+The difference is somewhat subtle: while coordinate systems are frameworks for describing
+locations, grids are frameworks for dividing space.
+```
 
 Some grids are based on a GCS, but others aren't. A notable basic example of a grid system which
 is based on a GCS is the regular lat-lon grid, which uses latitude and longitude as the basis of
