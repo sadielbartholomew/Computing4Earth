@@ -5,7 +5,7 @@
 :local:
 ```
 
-## Grids
+## Grids and coordinate systems
 
 Ignoring local surface variations (mountains etc. - see orography), the
 Earth is still not a perfect sphere. Technically it is an oblate spheroid, a little wider in
@@ -15,37 +15,58 @@ the purposes of earth system modelling, it is generally treated as a sphere.
 <insert diagram of Earth shape>
 
 In order to pinpoint absolute and relative spatial locations on this sphere to which
-Earth is approximated as in shape, a horizontal grid system is needed. Vertical levels can
-then be created (if relevant) by considering the cells projected
-upwards from some defined lowest vertical level of the grid (often the Earth's surface) - or in rare
-cases may be defined differently.
+Earth is approximated as in shape, a horizontal coordinate system is needed. Vertical levels can
+then be created (if relevant) by considering space  projected
+upwards from some defined lowest vertical level of the coordinate system, which is often the Earth's
+surface (or in rare cases may be defined differently).
 
-Grid subdivisions 
-By splitting up the Earth into small cells formed by the grid
-sudivisions, we can TODO
+### Geographic coordinate system
 
-The majority of grid systems utilise the concept of latitude and longitude, imaginary
-lines that divide the Earth into sections - together they form there own grid, the
-regular latitude-longitude grid, which will be covered below.
+A Geographic Coordinate System (GCS) defines the reference surface (e.g. sphere or ellipsoid) and
+enables specification of locations on it by defining the origin and orientation of coordinates
+on the reference surface.
 
-Besides the regular latitude-longitude grid,
-there are various types of grid system defined and used for studying or modelling
-the Earth, because each has advantages (and motivations) and disadvantages.
-Some major examples are covered in a dedicated section below.
-
+In Earth Science, the GCS usually assumes Earth is a sphere and the coordinates are often
+expressed as latitude and longitude.
 
 ### Latitude and Longitude
 
-Latitude is TODO . Longitude is TODO
+Most coordinate systems  utilise the concept of latitude and longitude,
+imaginary lines that cross the Earth in north-south and east-west direction
+relative to set zero points.
 
 Both are measured in degrees, though in ESM we use more specific units of
 degrees east for longitude and degrees west for latitude.
 
-<insert diagram showing lat and lon>
+Latitude measures position north or south of the Equator, an imaginary line (a parallel,
+i.e. line of latitude) halfway between the North and South Poles.
 
+Longitude measures position east or west of the Prime Meridian, an
+imaginary north-south line (meridian means line of longitude) that passes from the
+North to South Pole through Greenwich, London, UK.
 
+<insert diagram(s) showing lat and lon>
 
-TODO
+### Grids
+
+A grid system partitions the Earth or relevant area on it into cells for numerical computation.
+
+While coordinate systems are frameworks for describing locations, grids are frameworks
+for dividing space.
+
+Some grids are based on a GCS, but others aren't. A notable basic example of a grid system which
+is based on a GCS is the regular lat-lon grid, which uses latitude and longitude as the basis of
+the grid.
+
+### Grid cells
+
+The discrete subdivisions of the Earth by the grid system, for example the 2D bounding
+boxes formed by the hypothetical lines of latitude and longitude in a regular lat-lon grid, or
+bounding 3D boxes formed by those plus set vertical levels, are called grid cells.
+
+By splitting up the full Earth system into grid cells, the Earth can be modelled as a
+collection of discrete areas or volumes (depending on whether the vertical dimension is
+also considered). This facilitates calculations by providing fundamental computational units.
 
 ### Grid resolution
 
@@ -84,6 +105,11 @@ TODO
 TODO
 
 #### Grid choice advantages and disadvantages
+
+There are various types of grid system defined and used for studying or modelling
+the Earth, because each has advantages (and motivations) and disadvantages. The typical use
+cases along with pros and cons for some key grid systems are summarised below:
+
 
 | Grid type | Example model/project | Diagram | Typical use | Main advantages | Main disadvantages |
 |------------|------------|------------|------------|----------------|-------------------|
