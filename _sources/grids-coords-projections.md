@@ -20,11 +20,11 @@ then be created (if relevant), often by considering the space projected
 upwards from some defined lowest vertical level of the coordinate system, often the Earth's
 surface.
 
-### Geographic coordinate system
+### Coordinate systems
 
-A Geographic Coordinate System (GCS) defines the reference surface (e.g. sphere or ellipsoid) and
-enables specification of locations on it by defining the origin and orientation of coordinates
-on the reference surface.
+A Geographic Coordinate System (GCS), or informally a coordinate system, defines the reference
+surface (e.g. sphere or ellipsoid) and enables specification of locations on it by defining the
+origin and orientation of coordinates on the reference surface.
 
 In Earth Science, the GCS usually assumes Earth is a sphere and the coordinates are often
 expressed as latitude and longitude.
@@ -99,10 +99,6 @@ TODO
 TODO
 
 #### Unstructured grids and UGRID
-
-TODO
-
-#### Coordinate systems
 
 TODO
 
