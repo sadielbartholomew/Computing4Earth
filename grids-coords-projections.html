@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -517,17 +517,45 @@ expressed as latitude and longitude.</p>
 </section>
 <section id="latitude-and-longitude">
 <h3><a class="toc-backref" href="#id3" role="doc-backlink">Latitude and Longitude</a><a class="headerlink" href="#latitude-and-longitude" title="Link to this heading">#</a></h3>
-<p>Most coordinate systems  utilise the concept of latitude and longitude,
+<p>Most coordinate systems utilise the concept of latitude and longitude,
 imaginary lines that cross the Earth in north-south and east-west direction
 relative to set zero points.</p>
-<p>Both are measured in degrees, though in ESM we use more specific units of
-degrees east for longitude and degrees west for latitude.</p>
-<p>Latitude measures position north or south of the Equator, an imaginary line (a parallel,
-i.e. line of latitude) halfway between the North and South Poles.</p>
-<p>Longitude measures position east or west of the Prime Meridian, an
+<p>Both are measured in degrees, though for data we prefer to refer to the more specific units of
+degrees east for longitude and degrees north for latitude:</p>
+<ul class="simple">
+<li><p>Longitude in degrees east measures position east (or west) of the Prime Meridian, an
 imaginary north-south line (meridian means line of longitude) that passes from the
-North to South Pole through Greenwich, London, UK.</p>
-<p>&lt;insert diagram(s) showing lat and lon&gt;</p>
+North to South Pole through Greenwich, London, UK. It is analagous
+to (and encoded as) the x coordinate for the Earth system.</p></li>
+<li><p>Latitude in degrees north measures position north (or south) of the Equator, an imaginary
+line (a parallel, i.e. line of latitude) halfway between the North and South Poles. It is analagous
+to (and encoded as) the y coordinate for the Earth system.</p></li>
+</ul>
+<p>Usually latitude is written as the first coordinate and longitude the second, to describe the
+north-south position first and then the east-west position: <code class="docutils literal notranslate"><span class="pre">(latitude,</span> <span class="pre">longitude)</span></code> i.e.
+<code class="docutils literal notranslate"><span class="pre">(y,</span> <span class="pre">x)</span></code> coordinates.</p>
+<p><a class="reference internal" href="#fig-latlon"><span class="std std-numref">Fig. 2</span></a> illustrates varying degrees of latitude on the left and of longitude on the right:</p>
+<figure class="align-default" id="fig-latlon">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Latitude_and_Longitude_of_the_Earth.svg/960px-Latitude_and_Longitude_of_the_Earth.svg.png?_=20250207114002"><img alt="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Latitude_and_Longitude_of_the_Earth.svg/960px-Latitude_and_Longitude_of_the_Earth.svg.png?_=20250207114002" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Latitude_and_Longitude_of_the_Earth.svg/960px-Latitude_and_Longitude_of_the_Earth.svg.png?_=20250207114002" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Schematic illustrating latitude and longitude. Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg#filelinks">Wikimedia Commons</a>.</span><a class="headerlink" href="#fig-latlon" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Latitude lines are parallel circles which slice the Earth into wedges, like orange slices; whereas longitude lines are lines which converge at the poles, like those which form orange segments.</p>
+<p>One way to help remember which is which between latitude and longitude is that <strong>long</strong>itude
+lines (meridians) are all <strong>equally long</strong> i.e. the same length (unlike latitude lines i.e. parallels) because they all go from pole to pole.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An interesting fact is that latitude is determined by nature, while longitude is determined
+by convention. The the poles and the Equator exist because of the Earth’s rotation, but the
+location of zero degrees (east) longitude is arbitrary and was chosen by humans. It was
+<a class="reference external" href="https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)">chosen as the line passing through the Royal Observatory in Greenwich in 1884</a>
+because Greenwich was already widely used as a reference for navigation and maps.</p>
+</div>
 </section>
 <section id="grids">
 <h3><a class="toc-backref" href="#id4" role="doc-backlink">Grids</a><a class="headerlink" href="#grids" title="Link to this heading">#</a></h3>

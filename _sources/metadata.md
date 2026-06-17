@@ -46,15 +46,14 @@ Metadata can be classified in different ways. A classification that is particula
 | **D — Discovery**              | A subset of the browse and archive metadata selected to aid finding data for evaluation, visualisation, and other uses. |
 | **E — Extra**                  | Core discipline-specific or instrument-specific metadata.                                                               |
 
-As illustrated by the following:
+As illustrated by  {numref}`ndg-metadata-taxonomy`:
 
-```{figure} media/ndg-metadata-taxonomy.jpeg
+```{figure} https://trs.silverchair-cdn.com/trs/content_public/journal/rsta/367/1890/10.1098_rsta.2008.0237/4/m_1003fig2.jpeg
 ---
-width: 80%
 name: ndg-metadata-taxonomy
-alt: NDG metadata taxonomy from Lawrence et al. (2008)
+width: 80%
 ---
-The NDG metadata taxonomy. Source: {cite}`lawrence2008`, Figure 2.
+The NDG metadata taxonomy. Source: Lawrence et al. (2008) {cite}`lawrence2008`.
 ```
 
 
