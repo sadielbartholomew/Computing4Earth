@@ -31,17 +31,17 @@ expressed as latitude and longitude.
 
 ### Latitude and Longitude
 
-Most coordinate systems  utilise the concept of latitude and longitude,
+Most coordinate systems utilise the concept of latitude and longitude,
 imaginary lines that cross the Earth in north-south and east-west direction
 relative to set zero points.
 
-Both are measured in degrees, though in ESM we use more specific units of
-degrees east for longitude and degrees west for latitude.
+Both are measured in degrees, though for data we prefer to refer to the more specific units of
+degrees east for longitude and degrees north for latitude.
 
-Latitude measures position north or south of the Equator, an imaginary line (a parallel,
-i.e. line of latitude) halfway between the North and South Poles.
+Latitude in degrees north measures position north (or south) of the Equator, an imaginary
+line (a parallel, i.e. line of latitude) halfway between the North and South Poles.
 
-Longitude measures position east or west of the Prime Meridian, an
+Longitude in degrees east measures position east (or west) of the Prime Meridian, an
 imaginary north-south line (meridian means line of longitude) that passes from the
 North to South Pole through Greenwich, London, UK.
 
