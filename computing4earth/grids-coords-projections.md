@@ -36,16 +36,27 @@ imaginary lines that cross the Earth in north-south and east-west direction
 relative to set zero points.
 
 Both are measured in degrees, though for data we prefer to refer to the more specific units of
-degrees east for longitude and degrees north for latitude.
+degrees east for longitude and degrees north for latitude:
 
-Latitude in degrees north measures position north (or south) of the Equator, an imaginary
+* Latitude in degrees north measures position north (or south) of the Equator, an imaginary
 line (a parallel, i.e. line of latitude) halfway between the North and South Poles.
-
-Longitude in degrees east measures position east (or west) of the Prime Meridian, an
+* Longitude in degrees east measures position east (or west) of the Prime Meridian, an
 imaginary north-south line (meridian means line of longitude) that passes from the
 North to South Pole through Greenwich, London, UK.
 
-<insert diagram(s) showing lat and lon>
+ {numref}`fig-latlon` illustrates latitude on the left and longitude on the right:
+
+```{figure} https://cdn.oceanservice.noaa.gov/oceanserviceprod/facts/longitude-istock.jpg
+---
+name: fig-latlon
+width: 80%
+---
+Schematic illustrating latitude and longitude. Source: NOAA Ocean Service (from the page https://oceanservice.noaa.gov/facts/longitude.html).
+```
+
+```{tip}
+
+```
 
 ### Grids
 
