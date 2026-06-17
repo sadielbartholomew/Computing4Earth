@@ -38,25 +38,45 @@ relative to set zero points.
 Both are measured in degrees, though for data we prefer to refer to the more specific units of
 degrees east for longitude and degrees north for latitude:
 
-* Latitude in degrees north measures position north (or south) of the Equator, an imaginary
-line (a parallel, i.e. line of latitude) halfway between the North and South Poles.
+
 * Longitude in degrees east measures position east (or west) of the Prime Meridian, an
 imaginary north-south line (meridian means line of longitude) that passes from the
-North to South Pole through Greenwich, London, UK.
+North to South Pole through Greenwich, London, UK. It is analagous
+to (and encoded as) the x coordinate for the Earth system.
+* Latitude in degrees north measures position north (or south) of the Equator, an imaginary
+line (a parallel, i.e. line of latitude) halfway between the North and South Poles. It is analagous
+to (and encoded as) the y coordinate for the Earth system.
 
- {numref}`fig-latlon` illustrates latitude on the left and longitude on the right:
+Usually latitude is written as the first coordinate and longitude the second, to describe the
+north-south position first and then the east-west position: `(latitude, longitude)` i.e.
+`(y, x)` coordinates.
 
-```{figure} https://cdn.oceanservice.noaa.gov/oceanserviceprod/facts/longitude-istock.jpg
+ {numref}`fig-latlon` illustrates varying degrees of latitude on the left and of longitude on the right:
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Latitude_and_Longitude_of_the_Earth.svg/960px-Latitude_and_Longitude_of_the_Earth.svg.png?_=20250207114002
 ---
 name: fig-latlon
 width: 80%
 ---
-Schematic illustrating latitude and longitude. Source: NOAA Ocean Service (from the page https://oceanservice.noaa.gov/facts/longitude.html).
+Schematic illustrating latitude and longitude. Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg#filelinks).
 ```
 
 ```{tip}
+Latitude lines are parallel circles which slice the Earth into wedges, like orange slices; whereas longitude lines are lines which converge at the poles, like those which form orange segments.
 
+One way to help remember which is which between latitude and longitude is that **long**itude
+lines (meridians) are all **equally long** i.e. the same length (unlike latitude lines i.e. parallels) because they all go from pole to pole.
 ```
+
+```{note}
+An interesting fact is that latitude is determined by nature, while longitude is determined
+by convention. The the poles and the Equator exist because of the Earth's rotation, but the
+location of zero degrees (east) longitude is arbitrary and was chosen by humans. It was
+[chosen as the line passing through the Royal Observatory in Greenwich in 1884](https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich))
+because Greenwich was already widely used as a reference for navigation and maps.
+```
+
+
 
 ### Grids
 
