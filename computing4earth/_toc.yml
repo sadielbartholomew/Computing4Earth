@@ -4,11 +4,12 @@
 format: jb-book
 root: intro
 chapters:
-- file: modelling
+- file: grids-coords-projections
 - file: data
 - file: metadata
-- file: hpc
-- file: grids-coords-projections
+- file: modelling
+- file: observation
 - file: science
+- file: hpc
 - file: glossary-and-acronyms
 
