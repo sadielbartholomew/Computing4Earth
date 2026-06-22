@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -628,38 +628,52 @@ cases along with pros and cons for some key grid systems are summarised below:</
 <tbody>
 <tr class="row-even"><td><p>Regular latitude–longitude</p></td>
 <td><p>HadGEM3-GC (Met Office Hadley Centre)</p></td>
-<td><p><em>(Insert lat–lon grid figure)</em></p></td>
-<td><p>• Global atmosphere and climate models<br>•  Analysis products</p></td>
+<td><p><em>(Insert regular lat–lon grid figure)</em></p></td>
+<td><p>• Global atmosphere and climate models<br>• Reanalysis and observational products</p></td>
 <td><p>• Conceptually simple<br>• Easy analysis and visualisation<br>• Structured indexing<br>• Mature numerical methods</p></td>
 <td><p>• Polar singularities<br>• Non-uniform cell areas<br>• Restrictive polar time steps</p></td>
 </tr>
 <tr class="row-odd"><td><p>Rotated latitude–longitude</p></td>
 <td><p>Regional UM (Met Office) configurations, CORDEX (Coordinated Regional Climate Downscaling Experiment, World Climate Research Programme) domains</p></td>
-<td><p><em>(Insert rotated lat–lon figure)</em></p></td>
-<td><p>Regional atmosphere and climate models</p></td>
-<td><p><em>(Insert dis/advantages)</em></p></td>
-<td><p><em>(Insert dis/advantages)</em></p></td>
+<td><p><em>(Insert rotated lat–lon grid figure)</em></p></td>
+<td><p>• Regional atmosphere models<br>• Regional climate models</p></td>
+<td><p>• Mostly same benefits as regular lat–lon<br>• Pole moved outside domain so singularities less detrimental<br>• Efficient regional focus</p></td>
+<td><p>• Same distortions as regular lat–lon<br>• Not globally uniform<br>• Less intuitive coordinates</p></td>
 </tr>
 <tr class="row-even"><td><p>Tripolar</p></td>
 <td><p>NEMO (Nucleus for European Modelling of the Ocean, European consortium)</p></td>
 <td><p><em>(Insert tripolar grid figure)</em></p></td>
-<td><p>Ocean and sea-ice models</p></td>
+<td><p>• Ocean models<br>• Sea-ice models</p></td>
 <td><p>• No Arctic singularity<br>• Widely used in ocean modelling</p></td>
-<td><p>• (Distortion near) artificial poles<br>• More complex geometry than regular lat-lon grid<br>• Limited atmospheric use</p></td>
+<td><p>• Distortion near artificial poles<br>• More complex geometry than regular lat–lon grid<br>• Limited atmospheric use</p></td>
 </tr>
 <tr class="row-odd"><td><p>Cubed sphere</p></td>
 <td><p>LFRic (Met Office)</p></td>
-<td><p><em>(Insert cubed-sphere figure)</em></p></td>
-<td><p>Modern atmosphere and coupled models</p></td>
-<td><p><em>(Insert dis/advantages)</em></p></td>
-<td><p><em>(Insert dis/advantages)</em></p></td>
+<td><p><em>(Insert cubed-sphere grid figure)</em></p></td>
+<td><p>• Modern atmosphere models<br>• Coupled Earth system models</p></td>
+<td><p>• No pole singularities<br>• Nearly uniform cell sizes<br>• Excellent scalability</p></td>
+<td><p>• Face-edge treatment required<br>• More complex numerics and software infrastructure</p></td>
 </tr>
 <tr class="row-even"><td><p>Icosahedral</p></td>
 <td><p>ICON (ICOsahedral Non-hydrostatic, DWD and MPI-M)</p></td>
 <td><p><em>(Insert icosahedral grid figure)</em></p></td>
-<td><p>Modern atmosphere models</p></td>
-<td><p><em>(Insert dis/advantages)</em></p></td>
-<td><p><em>(Insert dis/advantages)</em></p></td>
+<td><p>• Modern atmosphere models</p></td>
+<td><p>• Nearly uniform cell sizes<br>• Nearly isotropic mesh (resolution is similar in all directions)<br>• Excellent scalability</p></td>
+<td><p>• Unstructured mesh complexity<br>• More complex diagnostics and post-processing</p></td>
+</tr>
+<tr class="row-odd"><td><p>HEALPix (Hierarchical Equal Area isoLatitude Pixelisation)</p></td>
+<td><p>Planck mission sky maps (astrophysics origin); increasingly used in Earth observation and geospatial analysis</p></td>
+<td><p><em>(Insert HEALPix grid figure)</em></p></td>
+<td><p>• Astronomy<br>• Global geospatial datasets<br>• Remote sensing<br>• Spherical data analysis</p></td>
+<td><p>• Equal-area cells<br>• Hierarchical refinement<br>• Efficient spatial indexing<br>• Well suited to global statistical analyses</p></td>
+<td><p>• Cell shapes vary across the globe<br>• Less common in Earth system models<br>• Numerical methods less mature than for traditional model grids</p></td>
+</tr>
+<tr class="row-even"><td><p>Reduced Gaussian</p></td>
+<td><p>ECMWF IFS (Integrated Forecasting System)</p></td>
+<td><p><em>(Insert Gaussian grid figure)</em></p></td>
+<td><p>• Global numerical weather prediction<br>• Spectral atmospheric models</p></td>
+<td><p>• More uniform cells than regular lat–lon<br>• Efficient spectral transforms<br>• Structured indexing<br>• Operationally proven</p></td>
+<td><p>• Still based on latitude circles<br>• Less uniform than cubed-sphere or icosahedral grids<br>• Scalability limited by latitude-based decomposition</p></td>
 </tr>
 </tbody>
 </table>
