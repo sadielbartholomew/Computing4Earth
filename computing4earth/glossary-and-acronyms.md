@@ -1,5 +1,8 @@
 # Glossary and Acronyms
 
+% Note that in the glossary boxes you can't use normal {ref} links so have to use
+% heading like references.
+
 ## Acronyms
 
 ```{glossary}
@@ -84,7 +87,7 @@ UHI
 
 ```{glossary}
 Climate
-    The long-term average of  weather (variables, such as precipitation and air temperature) at a given location.
+    The long-term average of weather (variables, such as precipitation and air temperature) at a given location. See [Weather vs Climate](../computing4earth/science.md#weather-vs-climate) for more on the difference between climate and weather.
 
 Climatology
     The scientific study of Earth's climate.
