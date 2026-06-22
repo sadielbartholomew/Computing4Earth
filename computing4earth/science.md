@@ -8,7 +8,24 @@ TODO
 
 ## Weather vs. climate
 
-TODO
+The state of the (lower) atmosphere at a specific location or in a given region, as defined by
+quantities such as the air temperature and pressure,
+precipitation, wind strength and direction, and covering phenomena occuring there such as sunshine,
+rain, snow, wind and mist, can be described by weather or by climate depending on
+the timescales under consideration:
+
+* **weather** describes the instantaneous or short-term (on scales of hourly or daily or similar) state;
+* whereas **climate** describes the *average state* in the long term (on scales of monthly,
+   yearly or decadal).
+
+The nature of forecasting for the two concepts highlights this difference:
+
+* Weather forecasting allows us to make day-to-day plans for the near future, such as what to wear and what activities we might do (and allows businesses to make decisions based on the effect on consumer behaviour and production processes, e.g. increased ice cream sales on hot days and increased risk of transport delays or cancellations with heavy snow).
+* Climate projections predict future conditions in terms of patterns or trends - not specific weather phenomena expectations which are impossible to predict this far ahead - over years or more, usually more like many decades ahead. They enable assessment of future risks and inform decisions on requiremets for infratructure and resource management.
+
+TODO: add note about how chaos theory means we can't predict weather in months/years time.
+
+
 
 ### NWP
 
