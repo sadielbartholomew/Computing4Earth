@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -359,7 +359,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -375,6 +377,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acronyms">Acronyms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-excluding-acronyms">Glossary (excluding acronyms)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -386,6 +397,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="glossary-and-acronyms">
 <h1>Glossary and Acronyms<a class="headerlink" href="#glossary-and-acronyms" title="Link to this heading">#</a></h1>
+<section id="acronyms">
+<h2>Acronyms<a class="headerlink" href="#acronyms" title="Link to this heading">#</a></h2>
 <dl class="simple glossary">
 <dt id="term-AMOC">AMOC<a class="headerlink" href="#term-AMOC" title="Link to this term">#</a></dt><dd><p><strong>Atlantic Meridional Overturning Circulation</strong>; a large-scale system of ocean currents that transports heat, carbon, and nutrients through the Atlantic Ocean.</p>
 </dd>
@@ -435,7 +448,19 @@ document.write(`
 </dd>
 <dt id="term-SLR">SLR<a class="headerlink" href="#term-SLR" title="Link to this term">#</a></dt><dd><p><strong>Sea-Level Rise</strong>; the long-term increase in global or regional sea level driven primarily by ocean warming and land-ice loss.</p>
 </dd>
+<dt id="term-UHI">UHI<a class="headerlink" href="#term-UHI" title="Link to this term">#</a></dt><dd><p><strong>Urban heat island</strong>; the relative warmth of a city compared with surrounding rural areas.</p>
+</dd>
 </dl>
+</section>
+<section id="glossary-excluding-acronyms">
+<h2>Glossary (excluding acronyms)<a class="headerlink" href="#glossary-excluding-acronyms" title="Link to this heading">#</a></h2>
+<dl class="simple glossary">
+<dt id="term-Climate">Climate<a class="headerlink" href="#term-Climate" title="Link to this term">#</a></dt><dd><p>The long-term average of weather (variables, such as precipitation and air temperature) at a given location. See <a class="reference internal" href="science.html#weather-vs-climate"><span class="std std-ref">Weather vs Climate</span></a> for more on the difference between climate and weather.</p>
+</dd>
+<dt id="term-Climatology">Climatology<a class="headerlink" href="#term-Climatology" title="Link to this term">#</a></dt><dd><p>The scientific study of Earth’s climate.</p>
+</dd>
+</dl>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -483,6 +508,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acronyms">Acronyms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-excluding-acronyms">Glossary (excluding acronyms)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
