@@ -1,5 +1,7 @@
 # Glossary and Acronyms
 
+## Acronyms
+
 ```{glossary}
 AMOC
     **Atlantic Meridional Overturning Circulation**; a large-scale system of ocean currents that transports heat, carbon, and nutrients through the Atlantic Ocean.
@@ -72,4 +74,20 @@ RCM
 
 SLR
     **Sea-Level Rise**; the long-term increase in global or regional sea level driven primarily by ocean warming and land-ice loss.
+    
+UHI
+    **Urban heat island**; the relative warmth of a city compared with surrounding rural areas.
 ```
+
+
+## Glossary (excluding acronyms)
+
+```{glossary}
+Climate
+    The long-term average of  weather (variables, such as precipitation and air temperature) at a given location.
+
+Climatology
+    The scientific study of Earth's climate.
+```
+
+
