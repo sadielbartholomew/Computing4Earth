@@ -3,7 +3,6 @@
 TODO
 
 ```{contents}
-:local:
 ```
 
 ## Weather vs. climate

@@ -2,7 +2,6 @@
 
 
 ```{contents}
-:local:
 ```
 
 ## Grids and coordinate systems

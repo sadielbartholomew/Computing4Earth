@@ -3,7 +3,6 @@
 [TODO introduce topic]
 
 ```{contents}
-:local:
 ```
 
 ## Metadata (in general)

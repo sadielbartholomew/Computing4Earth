@@ -1,14 +1,14 @@
 # Data
 
 ```{note}
-We treat *meta*data as a separate topic given its importance, though really it is a topic under data
-so belongs under this section.
+We treat *meta*data as a separate topic (see section {ref}`metadata`) given its importance,
+though really it is a topic under data so belongs under this section.
 ```
-TODO
 
 ```{contents}
-:local:
 ```
+
+TODO
 
 ## Data categories
 

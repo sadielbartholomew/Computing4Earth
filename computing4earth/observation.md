@@ -3,7 +3,6 @@
 TODO
 
 ```{contents}
-:local:
 ```
 
 ## Motivation and applications
