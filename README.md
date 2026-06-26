@@ -1,7 +1,7 @@
 # Computing4Earth: Computing for the Earth Science Domain
 
-(Piecemeal) notes on computing for the Earth Science domain. These are personal notes but they are
-being openly shared in case they may be useful to others. Note they are likely to be patchy in context
-coverage until they are more mature.
+Book on computing for the earth science domain.
 
-View the notes at: https://sadielbartholomew.github.io/Computing4Earth/intro.html
+> :warning: **Warning:** This book is under active development and will be patchy in coverage until it is more mature.
+
+View the book at: https://sadielbartholomew.github.io/Computing4Earth/
