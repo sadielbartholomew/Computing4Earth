@@ -14,18 +14,21 @@ to form an inventory, to organise the data, and to enable users to filter and se
 
 ```{tip}
 A good way to understand metadata and its importance is to think of a library of books. The
-metadata includes such core informatxion as the book title, author(s), and classification by
-subject matter or theme (guiding what section or shelf it gets placed on). Imagine trying to
+metadata includes such core informatxion as the book title, author(s), and [classification by
+subject matter or theme](https://en.wikipedia.org/wiki/Library_classification) (guiding what
+section or shelf it gets placed on). Imagine trying to
 locate a given book or organise them without carefully labelled metadata - we would have to
 consult the pages of text individually each time.
-
-```{image} media/books_1.jpg
-:alt: Books on a shelf in a library to illustrate the concept of metadata
-:align: center
 
 And for array-based data, comparing without metadata would be even more of a challenge
 because it would require consulting raw numbers (often in binary form so 0s and 1s only!) and
 trying to interpret these without any context.
+
+```{image} media/books_1.jpg
+:alt: Books on a shelf in a library to illustrate the concept of metadata
+:align: center
+```
+
 ```
 
 ## Metadata in Earth Science
