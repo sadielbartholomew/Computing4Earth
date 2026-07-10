@@ -7,11 +7,20 @@
 ## Grids and coordinate systems
 
 Ignoring local surface variations such as hills and mountains (see orography), the
-Earth is still not a perfect sphere. Technically it is an oblate spheroid, a little wider in
+Earth is [still not a perfect sphere](https://oceanservice.noaa.gov/facts/earth-round.html).
+Technically it is an oblate spheroid (an ellipsoid with two equal semi-diameters), a little wider in
 the centre due to its rotation and subsequent centrifugal forces on it. However, for
 the purposes of earth system modelling, it is generally treated as a sphere.
 
-<insert diagram of Earth shape>
+:::{figure} https://upload.wikimedia.org/wikipedia/commons/e/e6/Spheroids.svg
+:label: fig-oblate-spheroid
+:width: 80%
+
+Schematic showing an 'oblate' (left) and a 'prolate' spheroid shape. Earth is an oblate spheroid
+like on the left view except with the seminajor and semiminor axes being very close in size such
+that it is much closer to a sphere than the more 'squashed' oblate spheroid in the schematic where
+the two radii differ more.
+:::
 
 In order to pinpoint absolute and relative spatial locations on this sphere to which
 Earth is approximated as in shape, a horizontal coordinate system is needed. Vertical levels can
@@ -52,13 +61,12 @@ north-south position first and then the east-west position: `(latitude, longitud
 
  {numref}`fig-latlon` illustrates varying degrees of latitude on the left and of longitude on the right:
 
-```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Latitude_and_Longitude_of_the_Earth.svg/960px-Latitude_and_Longitude_of_the_Earth.svg.png?_=20250207114002
----
-name: fig-latlon
-width: 80%
----
-Schematic illustrating latitude and longitude. Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg#filelinks).
-```
+:::{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Latitude_and_Longitude_of_the_Earth.svg/960px-Latitude_and_Longitude_of_the_Earth.svg.png
+:label: fig-latlon
+:width: 80%
+
+Schematic illustrating latitude and longitude.
+:::
 
 ```{tip}
 Latitude lines are parallel circles which slice the Earth into wedges, like orange slices; whereas longitude lines are lines which converge at the poles, like those which form orange segments.

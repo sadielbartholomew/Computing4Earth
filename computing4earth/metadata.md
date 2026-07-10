@@ -19,6 +19,10 @@ subject matter or theme (guiding what section or shelf it gets placed on). Imagi
 locate a given book or organise them without carefully labelled metadata - we would have to
 consult the pages of text individually each time.
 
+```{image} media/books_1.jpg
+:alt: Books on a shelf in a library to illustrate the concept of metadata
+:align: center
+
 And for array-based data, comparing without metadata would be even more of a challenge
 because it would require consulting raw numbers (often in binary form so 0s and 1s only!) and
 trying to interpret these without any context.
