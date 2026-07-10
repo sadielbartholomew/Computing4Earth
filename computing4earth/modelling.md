@@ -1,4 +1,4 @@
-# Earth system modelling
+# Earth System Modelling
 
 TODO
 

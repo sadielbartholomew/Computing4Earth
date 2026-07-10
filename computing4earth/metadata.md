@@ -20,14 +20,11 @@ section or shelf it gets placed on). Imagine trying to
 locate a given book or organise them without carefully labelled metadata - we would have to
 consult the pages of text individually each time.
 
+![](media/books_1.jpg)
+
 And for array-based data, comparing without metadata would be even more of a challenge
 because it would require consulting raw numbers (often in binary form so 0s and 1s only!) and
 trying to interpret these without any context.
-
-```{image} media/books_1.jpg
-:alt: Books on a shelf in a library to illustrate the concept of metadata
-:align: center
-```
 
 ```
 

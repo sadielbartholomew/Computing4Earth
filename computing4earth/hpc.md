@@ -1,4 +1,4 @@
-# High-performance Computing (HPC) for Earth System Science
+# High-Performance Computing (HPC) for Earth System Science
 
 TODO
 

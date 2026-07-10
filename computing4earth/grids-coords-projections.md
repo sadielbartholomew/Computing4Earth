@@ -37,6 +37,14 @@ origin and orientation of coordinates on the reference surface.
 In Earth Science, the GCS usually assumes Earth is a sphere and the coordinates are often
 expressed as latitude and longitude.
 
+```{note}
+Alternative schemes do exist to describe the effective latitude and longitude coordinate, such
+as geocodes, which are identifier schemes for locations - well-known examples are
+[`Geohash`](https://en.wikipedia.org/wiki/Geohash) and
+[`what3words`](https://what3words.com/about). However in Earth Science we usually use
+latitude and longitude in degrees as a basis for specifying coordinates and location.
+```
+
 ### Latitude and Longitude
 
 Most coordinate systems utilise the concept of latitude and longitude,
@@ -45,7 +53,6 @@ relative to set zero points.
 
 Both are measured in degrees, though for data we prefer to refer to the more specific units of
 degrees east for longitude and degrees north for latitude:
-
 
 * Longitude in degrees east measures position east (or west) of the Prime Meridian, an
 imaginary north-south line (meridian means line of longitude) that passes from the
@@ -87,7 +94,8 @@ because Greenwich was already widely used as a reference for navigation and maps
 
 ### Grids
 
-A grid system partitions the Earth or relevant area on it into cells for numerical computation.
+A grid system partitions the Earth or relevant area on it into discrete cells for numerical
+computation.
 
 ```{tip}
 The difference is somewhat subtle: while coordinate systems are frameworks for describing
@@ -97,6 +105,14 @@ locations, grids are frameworks for dividing space.
 Some grids are based on a GCS, but others aren't. A notable basic example of a grid system which
 is based on a GCS is the regular lat-lon grid, which uses latitude and longitude as the basis of
 the grid.
+
+```{figure} media/gcm_grid_globe_bom.png
+---
+name: gcm_grid_globe_bom
+width: 80%
+---
+The Earth paritioned into discrete cells forming a grid system. Source: The Bureau of Meteorology (2003) https://www.bom.gov.au/info/GreenhouseEffectAndClimateChange.pdf.
+```
 
 ### Grid cells
 
