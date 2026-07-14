@@ -39,7 +39,7 @@ simulation and initial conditions etc. for the latter case.
 
 ### Types of metadata
 
-Metadata can be classified in different ways. A classification that is particularly useful for Earth science applications is the **NDG metadata taxonomy** described by Lawrence et al.  {cite}`lawrence2008`. The taxonomy centres on five categories:
+Metadata can be classified in different ways. A classification that is particularly useful for Earth science applications is the **NDG metadata taxonomy** described by {cite}`lawrence2008`. The taxonomy centres on five categories:
 
 | Category                       | Description                                                                                                             |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
