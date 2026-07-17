@@ -25,7 +25,3 @@ site:
     logo: media/c4e_logo_with_text.png
     logo_text: "Computing4Earth"
     folders: true
-  template: book-theme
-sphinx:
-  config:
-    myst_heading_anchors: 3
