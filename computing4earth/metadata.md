@@ -56,7 +56,7 @@ As illustrated by  {numref}`ndg-metadata-taxonomy`:
 name: ndg-metadata-taxonomy
 width: 80%
 ---
-The NDG metadata taxonomy. Source: Lawrence et al. (2008) {cite}`lawrence2008`.
+The NDG metadata taxonomy. Source: {cite}`lawrence2008`.
 ```
 
 
