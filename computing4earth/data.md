@@ -55,12 +55,12 @@ The availability of Earth system datasets depends on the **time period of intere
 
 This is summarised by this diagram which compares the time domain datasets in each category may by applicable to:
 
-```{figure} media/mermaid_diagram_slb_datacats
+```{figure} https://nordicesmhub.github.io/climate-data-tutorial/fig/climate_data_types.png
 ---
 name: datacategories-time-domain
 width: 100%
 ---
-Possible datasets by provenance category available for the past, present and future. Source: SLB/author's own.
+Possible datasets by provenance category available for the past, present and future. Source: https://nordicesmhub.github.io/climate-data-tutorial/01-introduction/index.html
 ```
 
 We briefly cover dataset levels and then go over each of these categories in turn and then look at how they relate to, and can interface with, each other.
@@ -92,6 +92,9 @@ TODO
 TODO
 
 ###  Reanalysis data
+
+% See: https://climate.copernicus.eu/courses/09-c3s-uls-data-resources-reanalysis/
+
 
 TODO
 
