@@ -8,15 +8,28 @@ though really it is a topic under data so belongs under this section.
 ```{contents}
 ```
 
-## Data categories
+## Categorising data
+
+### Provenance-based categories
 
 Earth system datasets can be grouped into four broad categories based on how they
 are generated (their **provenance**):
 
 - observations (including satellite data, though sometimes this is treated separately);
 - model simulations;
-- reanalysis products;
-- derived products.
+- reanalysis;
+- derived.
+
+```{note}
+The terms 'dataset' (or 'data set') and '(data) product' are generally used interchangably, and can
+be defined as:
+
+> a set of data files that can contain multiple parameters and that compose a logically meaningful group of related data
+
+% (from: https://www.earthdata.nasa.gov/engage/data-producer-resources/data-product-development-guide-producers-v2#apx_b Appendix B. Glossary) Version 2.0 of the Data Product Development Guide (DPDG) for Data Producers was released on July 10, 2024, by the NASA Earth Science Data Systems DPDG Working Group. Citation: Ramapriyan H.K., P.J.T. Leonard, E.M. Armstrong, S.J.S. Khalsa, D.K. Smith, L.F. Iredell, D.M. Wright, G.J. Huffman, and T.R. Walker. “Data Product Development Guide (DPDG) for Data Producers version 2.0. NASA Earth Science Data and Information System Standards Office, July 2024. https://doi.org/10.5067/DOC/ESCO/RFC-041VERSION2
+
+or more loosely a 'collection of data' but it is more common to see 'product' used in published data which results from an operational or processing chain - so usually you will see 'derived products' rather than 'derived data(sets)' used in practice.
+```
 
 % CCCS ref: see specifically 'Types of data' subsection from that link
 
@@ -30,20 +43,33 @@ progressing from observations through analyses and predictions (including
 numerical prediction and reanalysis) to derived products. But the categories remain
 similar in each case.
 
-Crucially, the availability of Earth system datasets depends on the **time period of interest**:
+### Data availability for past, present and future
+
+The availability of Earth system datasets depends on the **time period of interest**:
 
 - observations are inherently retrospective: we can only make observations of the present and past because they require measurements;
 - reanalysis extends observations so they are also contrained to the present and past;
-- model simulations bridge past and future: models are unique because they can simulate historical
-  behaviour as well as future climate under different forcing scenarios [add interlink to relevant page], so only they can provide future information.
+- however, model simulations are unique because they can simulate historical
+  behaviour as well as future climate under different forcing scenarios
+  (see {ref}`forcings`): only they can provide future information.
 
-TODO add diagram: "This is summarised by this diagram which compares the time domain datasets in each category may by applicable to."
+This is summarised by this diagram which compares the time domain datasets in each category may by applicable to:
 
-We now cover each of these categories in turn and then look at how they relate to, and can interface with, each other.
+```{figure} media/mermaid_diagram_slb_datacats
+---
+name: datacategories-time-domain
+width: 100%
+---
+Possible datasets by provenance category available for the past, present and future. Source: SLB/author's own.
+```
 
-```{note}
-TODO add note about data vs dataset vs product.
-````
+We briefly cover dataset levels and then go over each of these categories in turn and then look at how they relate to, and can interface with, each other.
+
+###  Data Processing Levels
+
+% See: https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/data-processing-levels
+
+TODO.
 
 ###  Observational data
 
