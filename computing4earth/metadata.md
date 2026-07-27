@@ -1,7 +1,5 @@
 # Metadata
 
-[TODO introduce topic]
-
 ```{contents}
 ```
 

@@ -1,7 +1,5 @@
 # Basics of Earth System Science
 
-TODO
-
 ```{contents}
 ```
 

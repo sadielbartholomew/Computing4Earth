@@ -1,7 +1,5 @@
 # High-Performance Computing (HPC) for Earth System Science
 
-TODO
-
 ```{contents}
 ```
 

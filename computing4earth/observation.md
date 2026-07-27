@@ -1,7 +1,5 @@
 # Earth Observation (EO)
 
-TODO
-
 ```{contents}
 ```
 
