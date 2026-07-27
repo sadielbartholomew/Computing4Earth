@@ -79,14 +79,15 @@ scientific heritage and/or development team. Over time, successive versions i.e.
 **generations** of the family incorporate new physical parameterisations, numerical methods,
 resolutions and component models.
 
-An example is the
-[HadGEM (Hadley Centre Global Environment Model)](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadgem3)
-family developed mainly the UK's Met Office Hadley Centre.
+An example is the HadGEM (Hadley Centre Global Environment Model)
+family developed mainly by the UK's Met Office Hadley Centre.
 
 The HadGEM family illustrates how climate models evolve over time. Successive generations
 generally incorporate improvements in spatial resolution alongside advances in the
 representation of physical, chemical and biological processes. Beginning with
-HadGEM2 (see {cite}`hadgem2-family-gmd`), and continuing in the latest generation HadGEM3,
+[HadGEM2](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadgem2)
+(see {cite}`hadgem2-family-gmd`), and continuing in the latest generation
+[HadGEM3](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadgem3),
 each generation comprises multiple model
 configurations tailored to different scientific applications ranging from operational NWP to
 global climate projections.
@@ -127,12 +128,14 @@ framework but differ in aspects such as:
 - horizontal and vertical spatial resolution;
 - temporal resolution (e.g. timestep).
 
-The HadGEM family provides a useful example. The current HadGEM3 generation includes
+HadGEM again provides a useful example. The current HadGEM3 generation includes
 numerous configurations designed for different scientific and operational purposes, for
 instance:
-- HadGEM3-GC3.1-LL is a relatively low-resolution coupled configuration used
+- [HadGEM3-GC3.1-LL](https://ukesm.ac.uk/cmip-es-documentation/hadgem3-gc31-ll/)
+  is a relatively low-resolution coupled configuration used
   extensively for CMIP6 climate simulations; while
-- HadGEM3-GC3.1-MM uses a higher-resolution atmosphere and ocean for HighResMIP
+- [HadGEM3-GC3.1-MM](https://ukesm.ac.uk/cmip-es-documentation/hadgem3-gc31-mm/)
+  uses a higher-resolution atmosphere and ocean for HighResMIP
   experiments.
 
 ***
@@ -140,6 +143,33 @@ instance:
 ## Model spin-up
 
 TODO
+
+***
+
+## Simple vs. complex climate models
+
+### Simple climate models
+
+TODO
+
+% - Layer model (see e.g. https://serc.carleton.edu/integrate/teaching_materials/earth_modeling/student_materials/unit3_article1.html)
+% - Energy balance models (e.g. https://github.com/climateblab/energy-balance)
+% - Radiative (equilibrium or convective) model
+
+### From simple to complex models
+
+TODO
+
+```{figure} https://www.researchgate.net/profile/Venni-Arra/publication/337363210/figure/fig2/AS:826968534679564@1574176071595/A-climate-model-pyramid-showing-increasing-complexity-in-GCMs-on-the-vertical-axis-and.png
+---
+name: gcm-complexity-pyramid
+width: 80%
+---
+A climate model pyramid showing increasing complexity in GCMs on the vertical axis and
+the primary processes that interact with each other along the outlines: radiation, dynamics,
+resolution, chemistry and surface processes. Source: {cite}`climate-model-crit-review`.
+```
+
 
 ***
 
