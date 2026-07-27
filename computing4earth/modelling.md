@@ -75,9 +75,9 @@ TODO
 ### Families of models
 
 A **model family** is a collection of related numerical models that share a common codebase,
-scientific heritage and/or development team. Over time, successive versions of the family
-incorporate new physical parameterisations, numerical methods, resolutions and
-component models.
+scientific heritage and/or development team. Over time, successive versions i.e.
+**generations** of the family incorporate new physical parameterisations, numerical methods,
+resolutions and component models.
 
 An example is the
 [HadGEM (Hadley Centre Global Environment Model)](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/climate-models/hadgem3)
@@ -102,17 +102,38 @@ An illustration of the improving resolution across vertical and horizontal space
 
 ```{tip}
 It is useful to make clear the distinction between **family**, **generation** and
-**configuration**. The table below provides examples.
+**configuration**. A model family describes the overall lineage of related models, whereas a
+model configuration is a specific implementation of a model generation for a particular
+scientific purpose. The table below provides examples.
 
 | Term                    | Meaning                                                                                                                                                     | Example                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
 | **Model family**        | A lineage of related models sharing a common codebase, scientific heritage and development team.                                                            | **HadGEM**, CESM, ICON, ACCESS, EC-Earth |
 | **Model generation**    | A major version within a family, typically representing substantial scientific or software developments.                                                    | HadGEM**1**, HadGEM**2**, HadGEM**3**            |
-| **Model configuration** | A specific implementation of a model generation, defined by its component models, parameterisations, coupling, spatial resolution and intended application. (See below.) | HadGEM3**-GC3.1-LL**, HadGEM3**-GC3.1-MM**   |
+| **Model configuration** | A specific implementation of a model generation, defined by its intended application, component models, coupling, parameterisations, and resolution (see below). | HadGEM3-**GC3.1-LL**, HadGEM3-**GC3.1-MM**   |
 
 ```
 
 ### Configurations of models
+
+Modern climate models are rarely developed as a single, fixed model. Instead, each model
+generation typically includes multiple model configurations, which share a common scientific
+framework but differ in aspects such as:
+
+- their intended application, such as NWP, seasonal forecasting or long-term climate projection;
+- the atmosphere, ocean, land and sea-ice component models and coupling of them;
+- which Earth system processes are represented (e.g. chemistry, aerosols or vegetation);
+- physical parameterisations;
+- horizontal and vertical spatial resolution;
+- temporal resolution (e.g. timestep).
+
+The HadGEM family provides a useful example. The current HadGEM3 generation includes
+numerous configurations designed for different scientific and operational purposes, for
+instance:
+- HadGEM3-GC3.1-LL is a relatively low-resolution coupled configuration used
+  extensively for CMIP6 climate simulations; while
+- HadGEM3-GC3.1-MM uses a higher-resolution atmosphere and ocean for HighResMIP
+  experiments.
 
 ***
 
