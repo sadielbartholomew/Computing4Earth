@@ -136,7 +136,7 @@ TODO
 
 TODO
 
-### Regular vs. irregular vs.unstructured
+### Regular vs. irregular vs. unstructured (vs. other) grids
 
 TODO
 
@@ -156,7 +156,53 @@ TODO
 
 TODO
 
-#### Grid choice advantages and disadvantages
+#### Other grids
+
+Some grids don't fit neatly into the classiifcation of (ir)regular or unstructured. Some important
+examples in use in the earth sciences are as follows.
+
+#### HEALPix
+
+HEALPix stands for **H**ierarchical **E**qual **A**rea iso**L**atitude **Pix**elation of a
+sphere. It was originally developed for all-sky astronomical observations, particularly analyses
+of the cosmic microwave background.
+
+However, it has come to be adopted in Earth system science due to various useful properties
+which guided its design, namely:
+
+- every cell has identical area, simplifying statistical analyses;
+- pixels can be recursively subdivided to increase resolution;
+- cells lie on iso-latitude rings, enabling fast spherical harmonic transforms and zonal calculations;
+- the indexing scheme makes neighbour searches and data access computationally efficient.
+
+As alluded to in the second advantage point above,  HEALPix grids are restricted to resolutions
+that nest hierarchically, i.e. one cell at a given resolution always contains exactly four
+whole cells at next higher resolution.  This means you can easily move between resolutions via
+unweighted averaging/summing/broadcasting, rather than computationally expensive and
+(to some extent) inaccurate regridding techniques.
+
+HEALPix has a further advantage that the cells are completely defined by mathematical formula
+(amount, shape, and location), so you don’t need to to store coordinates and bounds on
+datasets since they can be deduced.
+
+##### Defining HEALPix grids
+
+Each defined hierarchical resolution is called a **refinement level**. To define a particular
+HEALPix grid you also need to specify one of the four available **indexing schemes**, which are, where 'consecutive pixels' means consecutive in the data array:
+
+- **ring**: sorts pixels along isolatitude rings from north to south, resulting in consecutive pixels
+  that share a latitude;
+- **nested**: sorts pixels along the Z-order curve within each of the 12 base level, resulting in geographic proximity for consecutive pixels;
+- **nuqiq**: effectively concatenates nested indices from lower to the higher refinement levels, resulting in geographic proximity for consecutive pixels within a refinement level but not across different refinement levels;
+- **zuniq**: sorts pixels of all  refinement levels along the Z-order curve resulting in geographic proximity for consecutive pixels, regardless of their refinement level.
+
+The latter two, **z/nuniq**, are designed so that you can store this field as a single 1D  array
+with indices and each index uniquely defines the exact size and location of its cell, regardless
+of the cell resolution. They differ in expected access pattern, where nuniq is 'breadth first' and
+zuniq is 'depth first'.
+
+
+#### Grid choice advantages and disadvantages summary
 
 There are various types of grid system defined and used for studying or modelling
 the Earth, because each has advantages (and motivations) and disadvantages. The typical use
