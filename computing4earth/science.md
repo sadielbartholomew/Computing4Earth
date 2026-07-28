@@ -52,7 +52,30 @@ TODO
 
 TODO
 
-### Atmosphere
+## The Spheres of the Earth system
+
+Earth can be divided into **spheres** i.e. subsystems. These overlap and are
+interconnected, but it helps to break down the Earth conceptually.
+
+### The Geosphere vs. the Biosphere
+
+```{figure} https://www.geographyrealm.com/wp-content/uploads/2020/03/geosphere-biosphere-earth.png
+---
+name: geo-bio-spheres
+width: 80%
+---
+Illustration of the biosphere and the geosphere of the Earth, with the four sub-spheres of the
+geosphere also indicated. Source: https://www.geographyrealm.com/what-are-the-earths-systems/
+```
+
+Often a distinction is made between the living ('biotic') and non-living ('abiotic')
+subsystems: the systems with living organisms is called overall the **biosphere**
+and the purely physical subsystems, without living organisms, are overall
+counted as the **geosphere**.
+
+## The Geosphere
+
+### The Atmosphere
 
 TODO
 
@@ -68,23 +91,27 @@ TODO
 
 TODO
 
-###  Oceanography
+###  The Hydrosphere
 
 TODO
 
-### Currents
+#### Oceanography
 
 TODO
 
-### Thermohaline circulation
+#### Currents
 
 TODO
 
-### Heat transport
+#### Thermohaline circulation
 
 TODO
 
-### Cryosphere
+#### Heat transport
+
+TODO
+
+### The Cryosphere
 
 TODO
 
@@ -101,6 +128,18 @@ TODO
 TODO
 
 #### Permafrost
+
+TODO
+
+### The Lithosphere
+
+TODO
+
+***
+
+## The Biosphere
+
+### The Anthroposphere
 
 TODO
 
