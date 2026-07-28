@@ -247,7 +247,8 @@ Illustration of the nested and ring indexing schemes, two of the four possible f
 HEALPix grids, in a cylindrical projection for the level one grid i.e. $R=1$
 (first and third panel) and the level two grid i.e. $R=2$ (second and fourth) with
 the top two panels showing indexing by the ring scheme and the bottom two
-panels the nested scheme.
+panels the nested scheme. Source: https://healpix.sourceforge.io/, based off
+a very similar figure from the paper {cite}`Gorski_2005`.
 ```
 
 The latter two, **z/nuniq**, are designed so that you can store this field as a single 1D  array
@@ -258,7 +259,39 @@ zuniq is 'depth first'.
 
 ##### Multi-resolution HEALPix grids
 
-TODO
+While a standard HEALPix grid uses a single refinement level across the
+entire sphere, multi-resolution HEALPix grids (see {cite}`multi-res-healpix`)allow
+different regions to be
+represented at different resolutions. Areas requiring greater spatial detail
+can therefore be refined independently, while more homogeneous regions
+remain at a coarser resolution. This hierarchical representation can
+substantially reduce storage requirements and computational cost without
+sacrificing accuracy where it is most needed.
+
+```{figure} https://ars.els-cdn.com/content/image/1-s2.0-S2405844017304966-gr8.jpg
+---
+name: multi-reso-healpix
+width: 60%
+---
+An example multi-Resolution HEALPix grid showing six levels of cell resolution i.e.
+refinement level for different locations, depicted in different colours. Source:
+{cite}`multi-res-healpix`
+```
+
+Multi-resolution HEALPix can't be implemented with the same indexing
+schemes as satndard HEALPix because they have effectively
+effectively varying refinement level across the pixels. Therefore for
+each pixel you need to know not only the index but the refinement level.
+Instead, pixels are labelling according to **hierarchical indexing schemes**
+ such as UNIQ which encode both the
+refinement level and pixel index into a single integer, enabling pixels from
+different resolutions to coexist within a single dataset.
+
+Multi-resolution grids are particularly well suited to cloud-native geospatial
+datasets, where adaptive spatial resolution can improve storage efficiency
+and accelerate spatial queries.
+
+TODO add diagram of phenomena depicted on MRH grid as per presentation
 
 #### Grid choice advantages and disadvantages summary
 
@@ -274,7 +307,7 @@ cases along with pros and cons for some key grid systems are summarised below:
 | Tripolar | NEMO (Nucleus for European Modelling of the Ocean, European consortium) | *(Insert tripolar grid figure)* | • Ocean models<br>• Sea-ice models | • No Arctic singularity<br>• Widely used in ocean modelling | • Distortion near artificial poles<br>• More complex geometry than regular lat–lon grid<br>• Limited atmospheric use |
 | Cubed sphere | LFRic (Met Office) | *(Insert cubed-sphere grid figure)* | • Modern atmosphere models<br>• Coupled Earth system models | • No pole singularities<br>• Nearly uniform cell sizes<br>• Excellent scalability | • Face-edge treatment required<br>• More complex numerics and software infrastructure |
 | Icosahedral | ICON (ICOsahedral Non-hydrostatic, DWD and MPI-M) | *(Insert icosahedral grid figure)* | • Modern atmosphere models | • Nearly uniform cell sizes<br>• Nearly isotropic mesh (resolution is similar in all directions)<br>• Excellent scalability | • Unstructured mesh complexity<br>• More complex diagnostics and post-processing |
-| HEALPix (Hierarchical Equal Area isoLatitude Pixelisation) | Planck mission sky maps (astrophysics origin); increasingly used in Earth observation and geospatial analysis | *(Insert HEALPix grid figure)* | • Astronomy<br>• Global geospatial datasets<br>• Remote sensing<br>• Spherical data analysis | • Equal-area cells<br>• Hierarchical refinement<br>• Efficient spatial indexing<br>• Well suited to global statistical analyses | • Cell shapes vary across the globe<br>• Less common in Earth system models<br>• Numerical methods less mature than for traditional model grids |
+| HEALPix (Hierarchical Equal Area isoLatitude Pixelisation) | Planck mission sky maps (astrophysics origin); increasingly used in Earth observation and geospatial analysis | ![](https://irsa.ipac.caltech.edu/healpix/images/gorski_f1.jpg) | • Astronomy<br>• Global geospatial datasets<br>• Remote sensing<br>• Spherical data analysis | • Equal-area cells<br>• Hierarchical refinement<br>• Efficient spatial indexing<br>• Well suited to global statistical analyses | • Cell shapes vary across the globe<br>• Less common in Earth system models<br>• Numerical methods less mature than for traditional model grids |
 | Reduced Gaussian | ECMWF IFS (Integrated Forecasting System) | *(Insert Gaussian grid figure)* | • Global numerical weather prediction<br>• Spectral atmospheric models | • More uniform cells than regular lat–lon<br>• Efficient spectral transforms<br>• Structured indexing<br>• Operationally proven | • Still based on latitude circles<br>• Less uniform than cubed-sphere or icosahedral grids<br>• Scalability limited by latitude-based decomposition |
 
 ###  Vertical coodinates
