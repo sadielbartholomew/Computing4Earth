@@ -163,19 +163,26 @@ examples in use in the earth sciences are as follows.
 
 #### HEALPix
 
-HEALPix stands for **H**ierarchical **E**qual **A**rea iso**L**atitude **Pix**elation of a
-sphere. It was originally developed for all-sky astronomical observations, particularly analyses
-of the cosmic microwave background.
-
-However, it has come to be adopted in Earth system science due to various useful properties
-which guided its design, namely:
+HEALPix (see {cite}`Gorski_2005`) stands for **H**ierarchical **E**qual **A**rea iso*
+L**atitude **Pix**elation of a sphere. The basic idea is that the sphere is
+hierarchically tessellated into curvilinear quadrilaterals. HEALPix was originally developed for
+all-sky astronomical observations, particularly analyses
+of the cosmic microwave background. However, it has come to be adopted in Earth system science due to various useful properties which guided its design, namely:
 
 - every cell has identical area, simplifying statistical analyses;
 - pixels can be recursively subdivided to increase resolution;
 - cells lie on iso-latitude rings, enabling fast spherical harmonic transforms and zonal calculations;
 - the indexing scheme makes neighbour searches and data access computationally efficient.
 
-As alluded to in the second advantage point above,  HEALPix grids are restricted to resolutions
+```{figure} https://irsa.ipac.caltech.edu/healpix/images/gorski_f1.jpg
+---
+name: healpix-resos
+width: 80%
+---
+Orthographic view of the HEALPix partition of the sphere with octahedral symmetry. The shading illustrates how one cell becomes four as one descends the hierarchy of resolutions. Source: Figure 3 of {cite}`Gorski_2005`.
+```
+
+As alluded to in the second advantage point above, HEALPix grids are restricted to resolutions
 that nest hierarchically, i.e. one cell at a given resolution always contains exactly four
 whole cells at next higher resolution.  This means you can easily move between resolutions via
 unweighted averaging/summing/broadcasting, rather than computationally expensive and
@@ -187,8 +194,24 @@ datasets since they can be deduced.
 
 ##### Defining HEALPix grids
 
-Each defined hierarchical resolution is called a **refinement level**. To define a particular
-HEALPix grid you also need to specify one of the four available **indexing schemes**, which are, where 'consecutive pixels' means consecutive in the data array:
+Each defined hierarchical resolution is called a **refinement level $R$** and this
+relates to the number of **pixels** i.e. partitions of the sphere. The
+number of global pixels $N$ can be found from $R$ as follows:
+
+$$
+  N = 12 \times 4^{R}
+$$
+
+where the minimum R i.e. lowest resolution is 'level 0' i.e. $R=0$ with $N=12$
+pixels. Interestingly, the practical maximum is level 29' i.e.  $R=29$ since for
+$R \le 29$ all indexing schemes (see below) can be represented by
+64-bit integers but at $R=30$ we have $N=12 \times 4^{30}$
+which is $\approx 13.84$  quintillion ($\times 10^{18}$) which exceeds
+$\approx 9.223$ quintillion, the largest integer representable with 64 bits.
+
+To define a particular HEALPix grid you also need to specify one of the four available
+**indexing schemes** for labelling the pixels, which are, where 'consecutive pixels'
+means consecutive in the data array:
 
 - **ring**: sorts pixels along isolatitude rings from north to south, resulting in consecutive pixels
   that share a latitude;
@@ -196,11 +219,27 @@ HEALPix grid you also need to specify one of the four available **indexing schem
 - **nuqiq**: effectively concatenates nested indices from lower to the higher refinement levels, resulting in geographic proximity for consecutive pixels within a refinement level but not across different refinement levels;
 - **zuniq**: sorts pixels of all  refinement levels along the Z-order curve resulting in geographic proximity for consecutive pixels, regardless of their refinement level.
 
+```{figure} https://healpix.sourceforge.io/html/introf2.png
+---
+name: healpix-indexing-nested-ring
+width: 80%
+---
+Illustration of the nested and ring indexing schemes, two of the four possible for
+HEALPix grids, in a cylindrical projection for the level one grid i.e. $R=1$
+(first and third panel) and the level two grid i.e. $R=2$ (second and fourth) with
+the top two panels showing indexing by the ring scheme and the bottom two
+panels the nested scheme.
+```
+
 The latter two, **z/nuniq**, are designed so that you can store this field as a single 1D  array
 with indices and each index uniquely defines the exact size and location of its cell, regardless
 of the cell resolution. They differ in expected access pattern, where nuniq is 'breadth first' and
 zuniq is 'depth first'.
 
+
+##### Multi-resolution HEALPix grids
+
+TODO
 
 #### Grid choice advantages and disadvantages summary
 
