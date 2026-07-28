@@ -163,9 +163,10 @@ examples in use in the earth sciences are as follows.
 
 #### HEALPix
 
-HEALPix (see {cite}`Gorski_2005`) stands for **H**ierarchical **E**qual **A**rea iso*
-L**atitude **Pix**elation of a sphere. The basic idea is that the sphere is
-hierarchically tessellated into curvilinear quadrilaterals. HEALPix was originally developed for
+HEALPix (see {cite}`Gorski_2005`) stands for **H**ierarchical **E**qual **A**rea
+iso**L**atitude **Pix**elation of a sphere. The basic idea involves
+hierarchically tessellating the sphere into curvilinear quadrilaterals.
+HEALPix was originally developed for
 all-sky astronomical observations, particularly analyses
 of the cosmic microwave background. However, it has come to be adopted in Earth system science due to various useful properties which guided its design, namely:
 
@@ -208,6 +209,24 @@ $R \le 29$ all indexing schemes (see below) can be represented by
 64-bit integers but at $R=30$ we have $N=12 \times 4^{30}$
 which is $\approx 13.84$  quintillion ($\times 10^{18}$) which exceeds
 $\approx 9.223$ quintillion, the largest integer representable with 64 bits.
+
+```{note}
+There is also another numbering scheme used to distinguish HEALPix grids
+called the $N_{side}$ paramter which maps directly to  $R$ via:
+
+$$
+N_{side} = 2^{R}
+$$
+
+It represents the number of subdivisions along each edge of a base HEALPix pixel,
+where the base pixel, one of the 12 quadrilateral regions into which the sphere
+is initially divided before any refinement (to higher resolution) takes place.
+
+However, $N_{side}$ is uniquely determined by the $R$ value so it is derived and
+in these notes we refer to $R$ instead, because it is $R$ which must be specified in
+CF-compliant metadata to encode a HEALPix grid, hence more appropriate
+in the context of data and computing.
+```
 
 To define a particular HEALPix grid you also need to specify one of the four available
 **indexing schemes** for labelling the pixels, which are, where 'consecutive pixels'
