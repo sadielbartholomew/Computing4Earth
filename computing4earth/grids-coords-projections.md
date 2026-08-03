@@ -6,7 +6,8 @@
 
 ## Grids and coordinate systems
 
-Ignoring local surface variations such as hills and mountains (see orography), the
+Ignoring local surface variations such as hills and mountains (see
+{ref}`orography-section`), the
 Earth is [still not a perfect sphere](https://oceanservice.noaa.gov/facts/earth-round.html).
 Technically it is an oblate spheroid (an ellipsoid with two equal semi-diameters), a little wider in
 the centre due to its rotation and subsequent centrifugal forces on it. However, for
@@ -124,19 +125,43 @@ By splitting up the full Earth system into grid cells, the Earth can be modelled
 collection of discrete areas or volumes (depending on whether the vertical dimension is
 also considered). This facilitates calculations by providing fundamental computational units.
 
+(grid-reso)=
+
 ### Grid resolution
 
-TODO
+The size of the grid cells  is called the *resolution*. The higher the resolution, the smaller
+the grid cells and the more of them that cover the Earth, therefore the more computationally
+expensive the model using the grid but the better it can distinguish detailed information
+and capture processes that occur on smaller scales that are important to the overall
+behaviour (see also {ref}`parameterisations`).
+
+
+
+
 
 #### Horiztonal resolution
 
-TODO
+```{figure} https://www.carbonbrief.org/wp-content/uploads/2018/01/fig-1-4-1024x653.jpg
+---
+name: spatial-resolution
+width: 80%
+---
+Examples of varying horizontal/spatial resolutions of grid, and the finer
+{term}`topography` that it is possible
+to capture with each, for a selection of climate models from the first four {term}`IPCC`
+Assessment Reports, namely, in order of lowest to highest resolution: FAR (from 1990),
+SAR (1995), TAR (2001) and AR4 (2007). Source: Figure 1.4 of {cite}`IPCC2007AR4`
+(via a condensed version featured in
+[a The Carbon Brief article](https://www.carbonbrief.org/qa-how-do-climate-models-work)).
+```
+
+
 
 #### Vertical resolution
 
 TODO
 
-### Regular vs. irregular vs. unstructured (vs. other) grids
+### Grid categories: regular vs. irregular vs. unstructured (vs. other)
 
 TODO
 
@@ -291,7 +316,7 @@ Multi-resolution grids are particularly well suited to cloud-native geospatial
 datasets, where adaptive spatial resolution can improve storage efficiency
 and accelerate spatial queries.
 
-TODO add diagram of phenomena depicted on MRH grid as per presentation
+% TODO add diagram of phenomena depicted on MRH grid as per presentation
 
 #### Grid choice advantages and disadvantages summary
 

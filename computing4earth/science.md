@@ -12,8 +12,8 @@ rain, snow, wind and mist, can be described by weather or by climate depending o
 the timescales under consideration:
 
 * **weather** describes the instantaneous or short-term (on scales of hourly or daily or similar) state;
-* whereas **climate** describes the *average state* in the long term (on scales of monthly,
-   yearly or decadal, and typically defined over 30 years).
+* whereas **climate** describes the *average state* in the long term (on scales of monthly, seasonally,
+   annually, decadally, or even centennially, but often defined over 30 years).
 
 The nature of forecasting for the two concepts highlights this difference:
 
@@ -149,9 +149,11 @@ TODO
 
 TODO
 
+(orography-section)=
+
 ### Orography
 
-TODO
+{term}`Orography` is TODO
 
 #### Gravity Waves
 

@@ -9,9 +9,82 @@ TODO
 
 ## Model types
 
-TODO
+% Good sources TODO review and reference:
+% - https://www.gfdl.noaa.gov/climate-modeling/
+% - https://www.carbonbrief.org/qa-how-do-climate-models-work
+% - https://apps.epri.com/climate-data-user-guide/en/review-of-climate-models.html
 
 ### GCM vs. ESM
+
+ Both an Earth System Model ({term}`ESM` henceforth) and a General Circulation Model
+({term}`GCM` henceforth) are mathematical representations of the entire earth
+ system, including the interconnected physical components such as the atomsphere, ocean,
+ land and ice/cryosphere, but an {term}`ESM` goes beyond an {term}`GCM` to include
+ representation of the chemical and biological processes occuring on Earth which
+ feed back to the weather/climate system.
+ 
+ A GCM will use predetermined inputs
+ corresponding to the state of  such processes, for example the atmospheric composition and
+ greenhouse gas emissions or deforestation by humans, but an ESM will simulate how these
+ develop over time and therefore are more complex but in return include important
+ feedbacks which can amplify or dampen the state of climate change and are critical
+ for studying its long-germ evolution.
+
+Examples of components which an ESM will represent which a GCM won't include:
+
+- biogeochemical cycles, notably the carbon cycle;
+- atmospheric chemistry e.g. ozone and aerosols;
+- dynamic vegetation and land-based ecosystems;
+- marine biogeochemistry and ocean ecosystems.
+
+#### ESMs
+
+TODO
+
+#### General circulation models (GCMs)
+
+TODO
+
+***
+
+### Climate models vs. weather models
+
+TODO
+
+### Scenario-based modelling
+
+TODO
+
+### Resolution and time stepping
+
+#### Resolution
+
+See also {ref}`grid-reso` for more on resolution.
+
+TODO
+
+#### Time stepping
+
+TODO
+
+(parameterisations)=
+
+### Parameterisations
+
+TODO: Parameterisations for processes smaller than the resolution
+
+
+## Comparison and evaluation of models
+
+TODO
+
+### Bias Correction
+
+TODO
+
+***
+
+## Tuning and Calibration
 
 TODO
 

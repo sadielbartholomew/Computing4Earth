@@ -92,6 +92,12 @@ Climate
 
 Climatology
 : The scientific study of Earth's climate.
+
+Orography
+: The height of the land epsecially with major elevations such mountains and hills, and how they alter the weather and climate system via influencing air flow and precipitation patterns. A subset of {term}`topography`.
+
+Topography
+: The shape and height of terrain of the Earth's surface, including mountains and hills but also (unlike in {term}`orography`) coastlines and other landforms.
 ```
 
 
