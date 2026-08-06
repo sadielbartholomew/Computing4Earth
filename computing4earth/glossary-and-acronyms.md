@@ -98,6 +98,9 @@ Orography
 
 Topography
 : The shape and height of terrain of the Earth's surface, including mountains and hills but also (unlike in {term}`orography`) coastlines and other landforms.
+
+Bathymetry
+: The topography (height or in this case often depth) of underwater features, notably the ocean floor and sea beds.
 ```
 
 

@@ -151,9 +151,18 @@ TODO
 
 (orography-section)=
 
-### Orography
+### Topography
+
+{term}`Topography` is TODO
+
+#### Orography
 
 {term}`Orography` is TODO
+
+#### Bathymetry
+
+{term}`Bathymetry` is TODO
+
 
 #### Gravity Waves
 
