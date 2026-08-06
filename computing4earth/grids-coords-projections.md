@@ -91,12 +91,11 @@ location of zero degrees (east) longitude is arbitrary and was chosen by humans.
 because Greenwich was already widely used as a reference for navigation and maps.
 ```
 
-
-
 ### Grids
 
-A grid system partitions the Earth or relevant area on it into discrete cells for numerical
-computation.
+A *grid system* partitions the Earth or relevant area on it into discrete cells for numerical
+computation. Often a grid system will be called grid for short. Sometimes a grid is referred
+to as a *mesh*, but we stick to grid in this book.
 
 ```{tip}
 The difference is somewhat subtle: while coordinate systems are frameworks for describing
@@ -107,37 +106,92 @@ Some grids are based on a GCS, but others aren't. A notable basic example of a g
 is based on a GCS is the regular lat-lon grid, which uses latitude and longitude as the basis of
 the grid.
 
-```{figure} media/gcm_grid_globe_bom.png
----
-name: gcm_grid_globe_bom
-width: 80%
----
-The Earth paritioned into discrete cells forming a grid system. Source: The Bureau of Meteorology (2003) https://www.bom.gov.au/info/GreenhouseEffectAndClimateChange.pdf.
-```
-
 ### Grid cells
 
 The discrete subdivisions of the Earth by the grid system, for example the 2D bounding
-boxes formed by the hypothetical lines of latitude and longitude in a regular lat-lon grid, or
-bounding 3D boxes formed by those plus set vertical levels, are called grid cells.
+boxes  formed by the hypothetical lines of latitude and longitude in a regular lat-lon grid, or
+bounding 3D boxes formed by those plus set vertical levels, are called (*grid*) *cells* (or if 3D
+*boxes*).
 
 By splitting up the full Earth system into grid cells, the Earth can be modelled as a
 collection of discrete areas or volumes (depending on whether the vertical dimension is
 also considered). This facilitates calculations by providing fundamental computational units.
 
+
+```{figure} https://climateinformation.org/wp-content/uploads/sites/6/2023/08/gcm7.png
+---
+name: grid_cells_illustrated
+width: 80%
+---
+Illustration of how the earth can be partitioned into grid cells/boxes
+for modelling, which act as computational units. Also indicated is the
+transfer of data across cells, required in the computations.
+Source: SMHI Climate Information Portal, available at:
+https://climateinformation.org (image on page here:
+https://climateinformation.org/knowledge-base/models-and-methods/)
+```
+
+```{note}
+The term grid *cell* might conjure the image of a square (2D)
+or cube (3D), but grid cells are by no means necessarily
+square or cuboidal (or, on the sphere, curvilinear quadrilaterals
+or curved prisms). Depending on the grid system, 2D grid cells may
+instead be triangular, hexagonal or even arbitrary Voronoi polygons.
+
+```{figure} https://www2.mmm.ucar.edu/projects/mpas/site/_images/mpas_mesh.png
+---
+name: mpas_voronoi_mesh
+width: 80%
+---
+The [MPAS](https://www.mmm.ucar.edu/models/mpas) modelling project
+uses an *unstructured centroidal Voronoi* grid which
+is mainly comprised of hexagons but also some pentagons and septagons
+are present to compelte the tiling of the sphere.
+Source: https://www2.mmm.ucar.edu/projects/mpas/site/mpas_overview.html.
+```
+
+
+
 (grid-reso)=
 
 ### Grid resolution
 
-The size of the grid cells  is called the *resolution*. The higher the resolution, the smaller
-the grid cells and the more of them that cover the Earth, therefore the more computationally
-expensive the model using the grid but the better it can distinguish detailed information
-and capture processes that occur on smaller scales that are important to the overall
-behaviour (see also {ref}`parameterisations`).
+The size of the grid cells, specifically the distance between grid points,  is called the *resolution*.
+The higher the resolution, the smaller the grid cells and the more of them that cover
+the Earth, therefore the more calculations
+that occur and the more computationally expensive the model using the grid
+but the better it can distinguish detailed information and capture processes that
+occur on smaller scales that are important to the overall behaviour.
+
+A low(er)-resolution grid can be described as 'coarse(r)' and a high-resolution grid
+as 'fine(r)'. 'Sparse'/'dense' or 'low-fidelity'/'high-fidelity' may also be used for
+low-/high-resolution, but those are rarer in usage.
 
 
+```{note}
+Although a model's spatial resolution is often quoted as a single
+representative value (e.g. 100 km), the actual size of the grid
+cells is usually not uniform across a grid syste, and often
+the shape also varies (depending on the speciifc grid system, see
+major examples below).
 
+On a latitude–longitude grid, cells become progressively
+narrower towards the poles as lines of longitude
+converge. The quoted resolution therefore refers to the *nominal
+or approximate* grid spacing, rather than the exact dimensions
+of every grid cell.
+```
 
+For processes which are too small to be captured by the grid cell size, we use an approach
+called parameterisation (see {ref}`parameterisations`).
+
+The concept of resolution applies to all (spatial) grid systems, but it is not always expressed
+in the same way. For regular latitude-longitude grids, resolution is typically quoted
+as the nominal grid spacing (e.g. 100 km or 1°). Other grid systems, such as HEALPix,
+instead specify a refinement level (or equivalent parameter), from
+which the effective spatial resolution can be derived.
+Although the terminology differs, each description conveys the level of spatial
+detail that the given grid can represent.
 
 #### Horiztonal resolution
 
