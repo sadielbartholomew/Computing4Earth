@@ -71,8 +71,39 @@ TODO
 
 ### Parameterisations
 
-TODO: Parameterisations for processes smaller than the resolution
+When scientific processes are any of the following:
+- too small in scale to be captured (we say *resolved*) by the grid cell size;
+- the equations that govern them are too mathematically complex or unpredictable;
+- it is too computationally expensive (in time or memory etc.) to calculate per cell;
 
+they are treated via *parameterisation*.
+
+Parameterisations are representations of the given physical or chemical processes
+which don't directly calculate to simulate the process but instead simplify by
+approximating through use of representative variables or alternative datasets,
+for example in terms of the mean values across the grid box.
+
+```{figure} https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20220412092640702-0514:S2634460222000061:S2634460222000061_fig1.png
+---
+name: atmospheric-time-space-scales
+width: 100%
+---
+Important processes influencing weather and climate according to the
+scales in space and time which they occur. A line at 100 km indicates
+the spatial size under which a {term}`GCM` usually needs to parameterise
+a processes. For example, eddies, tides and turbulence all lie to the
+left of this line and are commonly parameterised by models.
+Source: Figure 1 of {cite}`Kitsios_De_Mello_Matear_2022`.
+```
+
+Common parameterisations used in models are for turbulence, convection, cloud processes,
+and radiative transfer.
+
+### Scales
+
+TODO
+
+% https://courses.ems.psu.edu/learningweather/node/29
 
 ## Comparison and evaluation of models
 
@@ -227,6 +258,7 @@ TODO
 
 % - Layer model (see e.g. https://serc.carleton.edu/integrate/teaching_materials/earth_modeling/student_materials/unit3_article1.html)
 % - Energy balance models (e.g. https://github.com/climateblab/energy-balance)
+% See: Energy balance climate models for the above, great review paper.
 % - Radiative (equilibrium or convective) model
 
 ### From simple to complex models
@@ -243,8 +275,16 @@ the primary processes that interact with each other along the outlines: radiatio
 resolution, chemistry and surface processes. Source: {cite}`climate-model-crit-review`.
 ```
 
-
 ***
+
+## Model variables
+
+There are three categories of climate variables:
+-  prescribed;
+- progrnostic;
+- diagnostic.
+
+% See: https://ntrs.nasa.gov/api/citations/20190004951/downloads/20190004951.pdf
 
 ## Data Assimilation
 

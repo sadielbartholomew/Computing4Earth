@@ -215,6 +215,9 @@ SAR (1995), TAR (2001) and AR4 (2007). Source: Figure 1.4 of {cite}`IPCC2007AR4`
 
 TODO
 
+% Good resource: file:///home/slb93/Downloads/32e74deb939b121227923062d572d4e6_lec25.pdf
+% from: https://ocw.mit.edu/courses/12-950-atmospheric-and-oceanic-modeling-spring-2004/resources/lecture-notes/
+
 ### Grid categories: regular vs. irregular vs. unstructured (vs. other)
 
 TODO
