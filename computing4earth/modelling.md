@@ -67,6 +67,10 @@ TODO
 
 TODO
 
+#### Downscaling
+
+TODO
+
 (parameterisations)=
 
 ### Parameterisations
@@ -83,6 +87,14 @@ which don't directly calculate to simulate the process but instead simplify by
 approximating through use of representative variables or alternative datasets,
 for example in terms of the mean values across the grid box.
 
+Common parameterisations used in models are for turbulence, convection, cloud processes,
+and radiative transfer.
+
+### Scales
+
+The spatial scales of processes influencing and describing weather and climate vary widely, as indicated
+in the diagram:
+
 ```{figure} https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20220412092640702-0514:S2634460222000061:S2634460222000061_fig1.png
 ---
 name: atmospheric-time-space-scales
@@ -96,14 +108,21 @@ left of this line and are commonly parameterised by models.
 Source: Figure 1 of {cite}`Kitsios_De_Mello_Matear_2022`.
 ```
 
-Common parameterisations used in models are for turbulence, convection, cloud processes,
-and radiative transfer.
-
-### Scales
-
-TODO
-
 % https://courses.ems.psu.edu/learningweather/node/29
+
+There are specific terms used to describe specific spatial scales and these are summarised in the
+table below.
+
+| Spatial scale   | Approximate spatial extent (km) | Typical examples                                                             |
+| --------------- | -------------------------: | ---------------------------------------------------------------------------- |
+| **Microscale**  |                     < 1 | Turbulence, buildings, individual fields, dust devils                        |
+| **Local**       |                   ~1–10 | Urban heat islands, local fog, sea breezes                                   |
+| **Mesoscale**   |                ~1–1,000 | Thunderstorms, squall lines, sea-breeze fronts, mesoscale convective systems |
+| **Synoptic**    |            ~1,000–3,000 | High- and low-pressure systems, fronts, mid-latitude cyclones                |
+| **Regional**    |               ~10–1,000 | Regional climate patterns, river basins, mountain ranges                     |
+| **Continental** or **Basin** |           ~1,000–10,000 | European climate, North American climate, ENSO, Indian Ocean Dipole, North Atlantic Oscillation |
+| **Global**      |                Earth-wide | Global circulation, global mean temperature, planetary climate patterns      |
+
 
 ## Comparison and evaluation of models
 
